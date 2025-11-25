@@ -1,30 +1,28 @@
-/* Custom CSS for Nyaoh popo! themed site (Stackテーマ用) */
+/* Stackテーマのデフォルトスタイルをグラデーションで強制上書きするCSS */
 
-/* テーマ全体のCSS変数を上書きして色を変えるわ */
-:root {
-    /* Nyaoh popo! のカラーパレット */
-    --popo-pink: #FFC0CB; 
-    --popo-blue: #ADD8E6; 
-    --popo-text-color: #333333; 
-
-    /* Stackテーマのメインカラーを上書き */
-    --body-bg: linear-gradient(to right, var(--popo-pink), var(--popo-blue)); /* サイト全体の背景色をグラデーションに */
-    --article-bg: #ffffff; /* 記事カードやコンテンツエリアの背景色は白に保つ */
-    --primary: var(--popo-pink); /* リンクなどの主要な色をピンクに */
-    --text-color: var(--popo-text-color); /* 通常の文字色 */
-    --text-dark: #333333;
-    
-    /* ヘッダー/ナビゲーションの文字色を強制的に白にする */
-    --title-color: #FFFFFF;
-    --nav-text-color: #FFFFFF; 
-}
-
-/* 記事カードなど、背景色を持つ要素の背景を白に戻す */
-.article-section, .list-section {
-    background-color: var(--article-bg) !important;
-}
-
-/* ページ全体のテキストカラーが暗い色にならないよう調整 */
+/* サイト全体の背景をグラデーションに！ */
 body {
-    color: var(--text-dark);
+    background: linear-gradient(to right, #FFC0CB, #ADD8E6) !important;
+}
+
+/* 記事カードやコンテンツエリアは白に戻す（グラデーションを邪魔しないように） */
+.main, .post-content, .article-section {
+    background-color: #ffffff !important;
+}
+
+/* ヘッダーやメニューの文字色を白に戻す (グラデーションの背景と合うように) */
+:root {
+    --text-color: #333333; /* 通常の文字色 */
+    --nav-text-color: #FFFFFF; /* メニュー文字色 */
+}
+
+/* ロゴ周辺のナビゲーションバーの背景も透過か、グラデーションに合わせる */
+.header {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+/* リンク色をピンクに */
+a {
+    color: #FFC0CB;
 }

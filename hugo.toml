@@ -14,9 +14,9 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
   # Stackテーマのプロフィール設定を追加（アバター/ロゴとして使われるわ）
   [params.profile]
     # ここに画像ファイルを指定する (Stackテーマは /images/ の下を探すことが多いわ)
-    avatar = "/images/nyaohpopo-logo.png" 
+    avatar = "nyaohpopo-logo.png"
     # ヘッダーに表示するタイトル
-    name = "Nyaoh popo!" 
+    name = "Nyaoh" 
     # プロフィール下の説明
     bio = "世界を目指す原石のために"
 
