@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'ja-jp'
 title = 'Nyaoh popo!'
 theme = 'ananke'
-copyright = "© nyaohpopo 2025"
+copyright = "nyaohpopo 2025"
 
 [params]
 
