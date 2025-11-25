@@ -58,3 +58,20 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
   name = "お問い合わせ"
   url = "/contact/"
   weight = 40
+
+# =======================================================
+# ▼▼▼【重要】アセット処理の設定 ▼▼▼
+# HugoがCSSやSassファイルを正しく処理するために必要よ！
+# =======================================================
+[build]
+  writeStats = true
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # HTMLタグをMarkdown内で使えるようにする（ビジュアル化に役立つ）
+
+[processing]
+  [processing.css]
+    # CSSの処理を有効にする
+    enable = true
