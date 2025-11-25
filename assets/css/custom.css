@@ -1,28 +1,39 @@
-/* Stackテーマのデフォルトスタイルをグラデーションで強制上書きするCSS */
+/* Custom CSS for Nyaoh popo! themed site (Stackテーマ用 - 最終版) */
 
-/* サイト全体の背景をグラデーションに！ */
-body {
-    background: linear-gradient(to right, #FFC0CB, #ADD8E6) !important;
-}
-
-/* 記事カードやコンテンツエリアは白に戻す（グラデーションを邪魔しないように） */
-.main, .post-content, .article-section {
-    background-color: #ffffff !important;
-}
-
-/* ヘッダーやメニューの文字色を白に戻す (グラデーションの背景と合うように) */
+/* Nyaoh popo! のカラーパレット */
 :root {
-    --text-color: #333333; /* 通常の文字色 */
-    --nav-text-color: #FFFFFF; /* メニュー文字色 */
+    --popo-pink: #FFC0CB; 
+    --popo-blue: #ADD8E6; 
+    --popo-text-color: #333333; 
+    --popo-light-text-color: #FFFFFF; 
+    
+    /* Stackテーマが使う背景色変数をグラデーションで上書き */
+    --body-bg: linear-gradient(to right, var(--popo-pink), var(--popo-blue)) !important; 
+    --body-text: var(--popo-text-color);
 }
 
-/* ロゴ周辺のナビゲーションバーの背景も透過か、グラデーションに合わせる */
-.header {
-    background-color: transparent !important;
+/* サイト全体にグラデーションを適用 */
+body {
+    background: var(--body-bg) !important;
+}
+
+/* メインコンテンツエリアの背景は白に戻し、グラデーションはサイドバーに残す */
+.main {
+    background-color: #ffffff !important;
+    color: var(--body-text);
+}
+
+/* サイドバーの背景もグラデーションを継承 */
+.sidebar {
+    background: var(--body-bg) !important;
+}
+
+/* サイドバーの文字色を白に強制 */
+.sidebar, .sidebar a, .sidebar .site-title {
     color: #FFFFFF !important;
 }
 
 /* リンク色をピンクに */
 a {
-    color: #FFC0CB;
+    color: var(--popo-pink);
 }
