@@ -1,27 +1,30 @@
-/* Custom CSS for Nyaoh popo! themed site */
+/* Custom CSS for Nyaoh popo! themed site (Stackテーマ用) */
+
+/* テーマ全体のCSS変数を上書きして色を変えるわ */
 :root {
+    /* Nyaoh popo! のカラーパレット */
     --popo-pink: #FFC0CB; 
     --popo-blue: #ADD8E6; 
     --popo-text-color: #333333; 
-    --popo-light-text-color: #FFFFFF; 
+
+    /* Stackテーマのメインカラーを上書き */
+    --body-bg: linear-gradient(to right, var(--popo-pink), var(--popo-blue)); /* サイト全体の背景色をグラデーションに */
+    --article-bg: #ffffff; /* 記事カードやコンテンツエリアの背景色は白に保つ */
+    --primary: var(--popo-pink); /* リンクなどの主要な色をピンクに */
+    --text-color: var(--popo-text-color); /* 通常の文字色 */
+    --text-dark: #333333;
+    
+    /* ヘッダー/ナビゲーションの文字色を強制的に白にする */
+    --title-color: #FFFFFF;
+    --nav-text-color: #FFFFFF; 
 }
-.hero {
-    background: linear-gradient(to right, var(--popo-pink), var(--popo-blue)) !important;
-    color: var(--popo-light-text-color);
+
+/* 記事カードなど、背景色を持つ要素の背景を白に戻す */
+.article-section, .list-section {
+    background-color: var(--article-bg) !important;
 }
-.hero h1, .hero h2 {
-    color: var(--popo-light-text-color);
-}
-.site-header a, .site-header a:visited {
-    color: var(--popo-text-color);
-}
-.site-footer {
-    color: var(--popo-text-color);
-    background-color: #f8f8f8; 
-}
-a {
-    color: var(--popo-pink);
-}
-a:hover {
-    color: var(--popo-blue);
+
+/* ページ全体のテキストカラーが暗い色にならないよう調整 */
+body {
+    color: var(--text-dark);
 }

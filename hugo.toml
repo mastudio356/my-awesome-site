@@ -6,19 +6,14 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
 
 [params]
 
-  # ロゴの設定はそのまま
-  logo = "/images/nyaohpopo-logo.png"
-
-  # ヒーローセクションの背景画像 (もしあれば使う)
-  stack_bg_img = "" 
-  # ananke_text_color = "white" ← CSSで設定するので削除！
-  
-  # ヒーローセクションに表示する大きなタイトルとサブタイトル
-  hero_title = "世界を目指す原石のために"
-  hero_subtitle = "学生がつくる未来のソーシャルプラットフォーム"
-
-  # ホームページに記事一覧を表示するかどうか (企業サイトなら通常は不要)
-  show_recent = false
+  # Stackテーマのプロフィール設定を追加（アバター/ロゴとして使われるわ）
+  [params.profile]
+    # ここに画像ファイルを指定する (Stackテーマは /images/ の下を探すことが多いわ)
+    avatar = "/images/nyaohpopo-logo.png" 
+    # ヘッダーに表示するタイトル
+    name = "Nyaoh popo!" 
+    # プロフィール下の説明
+    bio = "世界を目指す原石のために"
 
   # =======================================================
   # ▼▼▼【新規追加】ソーシャルメディアリンク ▼▼▼
