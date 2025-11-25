@@ -1,0 +1,44 @@
+/* Custom CSS for Nyaoh popo! themed site */
+
+/* ルート変数を定義して、グラデーションの色を管理 */
+:root {
+    --popo-pink: #FFC0CB; /* ロゴのピンクっぽい色 */
+    --popo-blue: #ADD8E6; /* ロゴの水色っぽい色 */
+    --popo-text-color: #333333; /* 濃い文字色 (読みやすさ重視) */
+    --popo-light-text-color: #FFFFFF; /* 明るい背景でのテキスト色 */
+}
+
+/* ヒーローセクションの背景をグラデーションにする */
+.hero {
+    /* グラデーションの方向と色を設定 */
+    background: linear-gradient(to right, var(--popo-pink), var(--popo-blue)) !important;
+    
+    /* ヒーローセクション内のテキストの色を白にする */
+    color: var(--popo-light-text-color);
+}
+
+/* ヒーローセクション内のタイトルとサブタイトルの色も白にする */
+.hero h1, .hero h2 {
+    color: var(--popo-light-text-color);
+}
+
+/* ナビゲーションメニューのリンク色を濃い文字色に */
+.site-header a, .site-header a:visited {
+    color: var(--popo-text-color);
+}
+
+/* フッターのテキスト色も濃い文字色に */
+.site-footer {
+    color: var(--popo-text-color);
+    background-color: #f8f8f8; /* フッターに少し背景色をつけて、白と区別する */
+}
+
+/* 通常のリンクの色をロゴの色に合わせる (ピンク) */
+a {
+    color: var(--popo-pink);
+}
+
+/* ホバー時のリンク色 (水色) */
+a:hover {
+    color: var(--popo-blue);
+}

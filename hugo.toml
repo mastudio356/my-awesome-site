@@ -5,6 +5,9 @@ theme = 'ananke'
 copyright = "© nyaohpopo 2025"
 
 [params]
+
+  logo = "/images/nyaohpopo-logo.png"
+
   # ヒーローセクションの背景色 (CSSのカラーコードを指定できるわ)
   # デフォルトは暗い色だから、企業ロゴの色に合わせるのもいいわね。
   # 例: 'darkgreen' や '#336699' など
