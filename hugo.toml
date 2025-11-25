@@ -1,4 +1,34 @@
 baseURL = 'https://example.org/'
 languageCode = 'ja-jp'
-title = 'My New Hugo Site'
+title = 'Nyaoh popo!'
 theme = 'ananke'
+copyright = "© nyaohpopo 2025"
+
+[params]
+  # ヒーローセクションの背景色 (CSSのカラーコードを指定できるわ)
+  # デフォルトは暗い色だから、企業ロゴの色に合わせるのもいいわね。
+  # 例: 'darkgreen' や '#336699' など
+  ananke_bg_img = "" # 後で画像を置くこともできるけど、今は空欄で
+  ananke_text_color = "white" # ヒーローセクションの文字色 (背景に合わせて変更)
+
+  # ヒーローセクションに表示する大きなタイトルとサブタイトル
+  hero_title = "世界を目指す原石のために
+  hero_subtitle = "学生がつくる未来のソーシャルプラットフォーム
+
+  # ホームページに記事一覧を表示するかどうか (企業サイトなら通常は不要)
+  show_recent = false
+
+[[menu.main]]
+  name = "サービス"
+  url = "/services/" # 後で services.md を作ってサービスページを作るのよ
+  weight = 10
+
+[[menu.main]]
+  name = "サイトについて
+  url = "/about/" # 後で about.md を作って会社概要ページを作るのよ
+  weight = 20
+
+[[menu.main]]
+  name = "お問い合わせ"
+  url = "/contact/" # 後で contact.md を作ってお問い合わせページを作るのよ
+  weight = 30
