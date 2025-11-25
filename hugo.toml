@@ -6,6 +6,11 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
 
 [params]
 
+  customCSS = ["/css/custom.css"] 
+
+  SEOTitle = "にゃおぽぽ"
+  description = "学生による小さな小さなゲームの隠れ場"
+
   # Stackテーマのプロフィール設定を追加（アバター/ロゴとして使われるわ）
   [params.profile]
     # ここに画像ファイルを指定する (Stackテーマは /images/ の下を探すことが多いわ)
