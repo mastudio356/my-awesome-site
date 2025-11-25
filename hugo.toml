@@ -1,7 +1,7 @@
 baseURL = 'https://nyaohpopo.com/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
 languageCode = 'ja-jp'
 title = 'Nyaoh popo!'
-theme = 'ananke'
+theme = 'stack'
 copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な表記に修正
 
 [params]
@@ -10,7 +10,7 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
   logo = "/images/nyaohpopo-logo.png"
 
   # ヒーローセクションの背景画像 (もしあれば使う)
-  ananke_bg_img = "" 
+  stack_bg_img = "" 
   # ananke_text_color = "white" ← CSSで設定するので削除！
   
   # ヒーローセクションに表示する大きなタイトルとサブタイトル
