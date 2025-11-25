@@ -1,19 +1,18 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://nyaohpopo.com/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
 languageCode = 'ja-jp'
 title = 'Nyaoh popo!'
 theme = 'ananke'
-copyright = "nyaohpopo"
+copyright = "© 2024 Nyaoh popo! All Rights Reserved." # コピーライトを正式な表記に修正
 
 [params]
 
+  # ロゴの設定はそのまま
   logo = "/images/nyaohpopo-logo.png"
 
-  # ヒーローセクションの背景色 (CSSのカラーコードを指定できるわ)
-  # デフォルトは暗い色だから、企業ロゴの色に合わせるのもいいわね。
-  # 例: 'darkgreen' や '#336699' など
-  ananke_bg_img = "" # 後で画像を置くこともできるけど、今は空欄で
-  ananke_text_color = "white" # ヒーローセクションの文字色 (背景に合わせて変更)
-
+  # ヒーローセクションの背景画像 (もしあれば使う)
+  ananke_bg_img = "" 
+  # ananke_text_color = "white" ← CSSで設定するので削除！
+  
   # ヒーローセクションに表示する大きなタイトルとサブタイトル
   hero_title = "世界を目指す原石のために"
   hero_subtitle = "学生がつくる未来のソーシャルプラットフォーム"
@@ -21,17 +20,41 @@ copyright = "nyaohpopo"
   # ホームページに記事一覧を表示するかどうか (企業サイトなら通常は不要)
   show_recent = false
 
+  # =======================================================
+  # ▼▼▼【新規追加】ソーシャルメディアリンク ▼▼▼
+  # 企業サイトには必須よ！フッターにアイコンが表示されるわ。
+  # =======================================================
+  # TwitterやInstagramなどのアカウントがあれば設定する。
+  # Twitter (X)
+  twitter = "https://twitter.com/nyaoh_popo_official" 
+  
+  # Instagram
+  instagram = "https://instagram.com/nyaoh_popo_official" 
+  
+  # GitHub (技術系企業なら)
+  github = "https://github.com/nyaohpopo-team" 
+
+
+# =======================================================
+# ▼▼▼【修正】メニュー設定 ▼▼▼
+# サイトについて → 企業情報 (よりビジネスっぽく)
+# =======================================================
 [[menu.main]]
   name = "サービス"
-  url = "/services/" # 後で services.md を作ってサービスページを作るのよ
+  url = "/services/"
   weight = 10
 
 [[menu.main]]
-  name = "サイトについて"
-  url = "/about/" # 後で about.md を作って会社概要ページを作るのよ
+  name = "企業情報" # 名称をよりビジネスライクに変更
+  url = "/about/" 
   weight = 20
 
 [[menu.main]]
-  name = "お問い合わせ"
-  url = "/contact/" # 後で contact.md を作ってお問い合わせページを作るのよ
+  name = "ブログ/ニュース" # ブログがあれば追加
+  url = "/posts/" 
   weight = 30
+  
+[[menu.main]]
+  name = "お問い合わせ"
+  url = "/contact/"
+  weight = 40
