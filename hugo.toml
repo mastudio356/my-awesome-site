@@ -1,4 +1,4 @@
-baseURL = 'https://nyaohpopo.com/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
+baseURL = 'https://nyaohpopo.cc/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
 languageCode = 'ja-jp'
 title = 'Nyaoh popo!'
 theme = 'stack'
@@ -8,10 +8,14 @@ copyright = "Nyaoh popo! All Rights Reserved." # コピーライトを正式な�
 
   SEOTitle = "にゃおぽぽ"
   description = "学生による小さな小さなゲームの隠れ場"
-  favicon: /images/favicon.ico
-  avatar:
-    local: false
-    src: /images/avatar.png
+  favicon = "/images/favicon.ico"
+
+[params.profile]
+  local = false
+  avatar = "/images/avatar.png" 
+  
+  name = "Nyaoh"
+  bio = "世界を目指す原石のために"
 
 # =======================================================
 # ▼▼▼【修正】メニュー設定 ▼▼▼
