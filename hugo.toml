@@ -12,8 +12,8 @@ copyright = "© nyaohpopo 2025"
   ananke_text_color = "white" # ヒーローセクションの文字色 (背景に合わせて変更)
 
   # ヒーローセクションに表示する大きなタイトルとサブタイトル
-  hero_title = "世界を目指す原石のために
-  hero_subtitle = "学生がつくる未来のソーシャルプラットフォーム
+  hero_title = "世界を目指す原石のために"
+  hero_subtitle = "学生がつくる未来のソーシャルプラットフォーム"
 
   # ホームページに記事一覧を表示するかどうか (企業サイトなら通常は不要)
   show_recent = false
@@ -24,7 +24,7 @@ copyright = "© nyaohpopo 2025"
   weight = 10
 
 [[menu.main]]
-  name = "サイトについて
+  name = "サイトについて"
   url = "/about/" # 後で about.md を作って会社概要ページを作るのよ
   weight = 20
 
