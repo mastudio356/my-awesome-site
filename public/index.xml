@@ -45,12 +45,66 @@
 </description>
         </item>
         <item>
-        <title>First Post</title>
+        <title> [個人見解] RTX 5050は現代ゲームで通用するのか？</title>
         <link>http://localhost:1313/posts/first-post/</link>
         <pubDate>Tue, 25 Nov 2025 14:36:45 +0900</pubDate>
         
         <guid>http://localhost:1313/posts/first-post/</guid>
-        <description>&lt;p&gt;Hello world!&lt;/p&gt;
+        <description>&lt;h2 id=&#34;個人見解-rtx-5050は現代ゲームで通用するのか&#34;&gt;&lt;a href=&#34;#%e5%80%8b%e4%ba%ba%e8%a6%8b%e8%a7%a3-rtx-5050%e3%81%af%e7%8f%be%e4%bb%a3%e3%82%b2%e3%83%bc%e3%83%a0%e3%81%a7%e9%80%9a%e7%94%a8%e3%81%99%e3%82%8b%e3%81%ae%e3%81%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;[個人見解] RTX 5050は現代ゲームで通用するのか？
+&lt;/h2&gt;&lt;p&gt;RTX 5050。5000シリーズの最下位に位置するGPU。VRAMが8GBしかなかったり、性能が今のAAAゲームに合っていないなどと様々言われているが、実際に実用するうえでどの程度その性能を体感できるのか気になったため実用してみることにした。&lt;/p&gt;
+&lt;h2 id=&#34;検証環境&#34;&gt;&lt;a href=&#34;#%e6%a4%9c%e8%a8%bc%e7%92%b0%e5%a2%83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;検証環境
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ryzen 7 9700X&lt;/li&gt;
+&lt;li&gt;DDR5 6000MT/s 64GB(32GB x 2)&lt;/li&gt;
+&lt;li&gt;RTX 5050 (MSI VENTUS 2x)&lt;/li&gt;
+&lt;li&gt;M.2 SSD 2TB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;結論&#34;&gt;&lt;a href=&#34;#%e7%b5%90%e8%ab%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;結論
+&lt;/h2&gt;&lt;p&gt;RTX5050はゴリゴリのAAAゲームをするには不向きだが、FullHDのゲームプレイであれば快適に動作するため、コストパフォーマンスに置いてはかなりいいと思った。&lt;/p&gt;
+&lt;h2 id=&#34;詳細&#34;&gt;&lt;a href=&#34;#%e8%a9%b3%e7%b4%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;詳細
+&lt;/h2&gt;&lt;p&gt;そもそもRTX5050は4Kゲーミングなどをする目的で販売されているわけではなく、ライト層へ向けての製品である前提で検証を行う。今回はGPUがよくわからないという人に向けて記載するために詳しいスペックやベンチマークはあまりメインで取り上げない。&lt;/p&gt;
+&lt;p&gt;まずRTX5050はゲームにおいて十分な性能を発揮する。もちろん、ゲーム内の設定には左右されるものの、5050の予算内で遊ぼうと考えているゲームは大概動作すると思って大丈夫だろう。以下の検証のパートで具体的なゲームのFPSなどの数値を記載していくので参考にしていただけるとありがたい。&lt;/p&gt;
+&lt;h2 id=&#34;実ゲーム検証&#34;&gt;&lt;a href=&#34;#%e5%ae%9f%e3%82%b2%e3%83%bc%e3%83%a0%e6%a4%9c%e8%a8%bc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;実ゲーム検証
+&lt;/h2&gt;&lt;p&gt;ゲームの検証は以下のアプリケーションで行う。すべて1920x1080の解像度でプレイする。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GTA5 エンハンスト&lt;/li&gt;
+&lt;li&gt;APEX LEGENDS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gta5エンハンスト&#34;&gt;&lt;a href=&#34;#gta5%e3%82%a8%e3%83%b3%e3%83%8f%e3%83%b3%e3%82%b9%e3%83%88&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;GTA5　エンハンスト
+&lt;/h2&gt;&lt;p&gt;GTA5 エンハンストをオンラインでプレイしたとき、以下のような結果になった。初回起動ではゲーム内画質設定は &lt;strong&gt;高レイトレーシング&lt;/strong&gt; となっていた。web用に圧縮しているが、以下が該当画質でのゲーム画像だ。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gta5e_view_RTX5050.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;screenshot&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;結果としては&lt;/p&gt;
+&lt;p&gt;ビル群の並ぶ都心部で平均120FPS、最高130FPS&lt;/p&gt;
+&lt;p&gt;比較的平坦な郊外では平均して140FPS、最高146FPSを出すことができた。&lt;/p&gt;
+&lt;p&gt;特に目立つFPSの低下はないこと、かなりの高画質で120FPSを維持できることから、かなり快適にプレイできると言えるだろう。&lt;/p&gt;
+&lt;h2 id=&#34;apex-legends&#34;&gt;&lt;a href=&#34;#apex-legends&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;APEX LEGENDS
+&lt;/h2&gt;&lt;p&gt;APEXをオンラインでプレイしたとき、以下のような結果になった。初回起動ではゲーム内画質設定は &lt;strong&gt;モデルディテール以外すべて最高設定&lt;/strong&gt; となっていた。web用に圧縮しているが、以下が該当画質でのゲーム画像だ。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/apex_view_RTX5050.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;screenshot&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;結果としては&lt;/p&gt;
+&lt;p&gt;降下時で平均110FPS、最高160FPS&lt;/p&gt;
+&lt;p&gt;降下以外の地上でのゲームプレイは180FPSを安定して出し続けることが出来た。（何故か垂直同期を解除してもこれ以上FPSが伸びなかったが、常に張り付いているため更にFPSが出せる環境の場合はさらなるFPS増加を期待できる）&lt;/p&gt;
+&lt;p&gt;安定して高FPSを出し続けることができるので、APEXを遊ぶプレイヤーにとっては安心のGPUだと言えるだろう。&lt;/p&gt;
+&lt;h2 id=&#34;なぜベンチマークはしないのか&#34;&gt;&lt;a href=&#34;#%e3%81%aa%e3%81%9c%e3%83%99%e3%83%b3%e3%83%81%e3%83%9e%e3%83%bc%e3%82%af%e3%81%af%e3%81%97%e3%81%aa%e3%81%84%e3%81%ae%e3%81%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;なぜベンチマークはしないのか
+&lt;/h2&gt;&lt;p&gt;ベンチマークは確かにそのGPUの性能を図るうえで最も一般的かつ正確なデータを取得できるツールである。但しこれはあくまでベンチマーク上の結果であり、実際のゲームプレイがどの様になるかはプレイしないとわからないものがある。また、ベンチマークの提供されていないApexやValorant、その他の大部分のゲームのFPSを気にするユーザーが多いだろう。そういった意味でもベンチマークは行わず実際のゲームプレイにフォーカスした。&lt;/p&gt;
+&lt;p&gt;もしベンチマークが気になる場合は様々なサイトが公平な条件で比較を行っているため、そちらを参考にするのが最適だろう。本サイト制作者は定期的にパーツを変更するため一貫した条件でのゲームプレイ比較が出来ないのだ。あくまでそのばその場での環境似合わせたベンチマークであることご了承ください。&lt;/p&gt;
 </description>
         </item>
         

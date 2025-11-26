@@ -4,8 +4,7 @@ module:
         min: "0.87.0"
 
 params:
-    mainSections: 
-        - post
+    mainSections: ["post"]
     featuredImageField: image
     rssFullContent: true
     favicon:  /images/favicon.ico
