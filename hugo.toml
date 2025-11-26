@@ -1,4 +1,4 @@
-baseURL = 'https://nyaohpopo.cc/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
+baseURL = 'https://nyaohpopo.cc/'
 languageCode = 'ja-jp'
 title = 'にゃおぽぽ'
 theme = 'stack'
