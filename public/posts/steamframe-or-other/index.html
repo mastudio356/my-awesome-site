@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja-JP" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="次世代XRヘッドセット SteamFrame!\r最近Steamが様々なゲーミングデバイスを発表したことが有名だ。その中でも、VRChatterを含めたVRユーザーを驚愕させたのがそう、SteamFrameなのだ。 アイトラッキングにハンドトラッキング、ついにベースステーション無しでのインサイドトラッキングにも対応。とんでもない機器が出てきてしまった。\nVRの種類について自分なりの考え\r最近のXRヘッドセットを見てると、色々なメーカーが「次、どこを攻めるか」をすごく考えてるんだなって感じるんですよね。前にVRって言えば「PCに繋ぐか、単体で遊ぶか」の二択だった気がするんですけど、今はもっと細かく分かれてきてる、っていうのが正直な感想です。\nまず、個人的に注目しちゃうのがSteamFrameです。あれはもう、完全に「究極のゲーミングVR体験」に全振りしてるなって印象。Snapdragonのすごいチップとか、16GBのRAMとか、スペックだけ見ても「ゲーム用PCを顔に付けてる」みたいな感じですよね。しかもWi-Fi 7対応で無線なのに有線並みの低遅延って、ValveさんがPCゲーマーをどれだけ大事にしてるかが伝わってくる気がします。アイトラッキングも、たぶんゲームのパフォーマンスを上げるために使ってる部分が大きいんだろうな、って想像しちゃいます。やっぱり、最高のグラフィックでヌルヌル動くVRゲームをストレスなく楽しみたい！っていう層には、これが本命なんだと思います。\nそれと似てるほ方向なのが、VIVE Focus Visionですね。これはもう「VRガチ勢」っていうオーラが出てるというか。片目2448 x 2448ピクセルっていう超高解像度は、普通のVRゲームにはちょっとオーバースペックな気もしますけど、医療のシミュレーションとか、高精細なゲームとか、とにかく細部まで正確に見たいっていう人は、この忠実度が絶対的に重要なんだろうなって思います。高精度なフェイシャルトラッキングも使えるので、VRChatterにも使っているユーザーは少なくないと思います。\nで、MetaのQuestシリーズと、それに対抗するPico 4 Ultraみたいなヘッドセットは、やっぱり「みんなにVR,MR（複合現実）を楽しんでもらいたい」っていう路線に見えます。XR2 Gen 2チップと、綺麗なカラーパススルーカメラを積んで、手軽に現実とデジタルを混ぜ合わせた体験を提供しようとしてる。ただ、フェイシャルトラッキングとか高度な機能がない分、「まずは手軽さを優先して、ディープな機能はプロ向けに」っていう、段階的な戦略なんだろうな、って感じがします。多くの人が触れるきっかけを作る、っていうのが彼らの考えなんだと考えると、この設計は納得できますね。\nこうやって並べてみると、VR市場って昔の「PC vs. スタンドアロン」っていうシンプルな構図から、「最高の性能でPCVRを追求するSteamFrame,Focus Vision」「手軽に楽しむための汎用MRのQuest/Pico」っていう、2つの勢力に分かれてきたんだなぁ、って肌で感じます。\n特に面白いのが、SteamFrameがカラーパススルーやコントローラーレスのハンドトラッキングをあえて搭載してないっていう情報。これって、MetaやPicoが頑張ってる「汎用MR市場」で直接戦うのを避けて、「うちは最高のPCVR体験に集中します！」っていうValveの強い意志の表れなんだと思うんです。自分たちの得意なフィールドで、一番になろうとしてる戦略、これはすごく分かりやすい差別化だなって思いました。\n結局のところ、今のXR市場の競争って、単にチップの性能を競い合うだけじゃなくて、**「誰のために、どんな体験を提供したいか」**っていう、ターゲットに合わせた技術を戦略的に選んでるんだなっていうのが、色々な製品を見ることで見えてくる気がしますね。\nディスプレイと光学系：解像度って結構違う\r新しいVR,XRヘッドセットで「お、いいな」って感じるのは、やっぱり画面がどれだけキレイに見えるか、ってことだと思うんです。これは解像度、リフレッシュレート、あとレンズの構造、この3つで決まる気がしますね。\n解像度でいうと、VIVE Focus Visionを初めて使ったときはちょっと驚きました。片目2448 x 2448って、現行モデルの中ではトップクラスの精細さなんじゃないかな。特にVR上の細かい文字をしっかり読まなきゃいけない場面では、すごく頼りになると思うんですよ。一方で、SteamFrameとPico 4 Ultraは、片目2160 x 2160っていう感じですね。これも十分キレイなんだろうけど、Visionの数字はちょっと別格な気がします。\nちなみに解像度的な比較をすると、VIVE Focus Visionが5K、Quest3が4Kです。 イマイチイメージしにくいので記載しておくと、5Kは1470万画素、**4Kは830万画素（VRだともうちょっと多い）**ので、単純比較は出来ませんが、画素数で比較するとおおよそ ～1.8倍の画素数になるんですよ！実際に使ってみるとFocusVisionって本当にきれいだなってわかります。ただ普段から5Kを使うとPCが悲鳴を上げるので気にしなくてもいいといえばそうなってしまいますが&hellip;\nレンズの話だと、SteamFrameとPico 4 Ultraがパンケーキレンズを採用しているのは、個人的にはすごく嬉しいポイントです。Quest 3もそうだけど、このレンズのおかげで本体がかなり小さく、そして軽くなっているんですよね。特にSteamFrameは、コアユニットが190g、全体でも435gと推定されていて、これはもう「軽い！」としか言いようがない。私、FocusVisionを使っていて重たいなと思っていたのですがまさかの860g!!\u3000これは流石に驚くと同時につけてて重いなという印象です。\nリフレッシュレートについても見てみると、VIVE Focus VisionはDisplayPort接続で120Hzに対応してます。そしてSteamFrameも72Hzから120Hz、さらに実験的に144Hzもサポートするかもしれないって噂があって。フレームレートが高いと、酔いにくくなるし、動きの激しいゲームでも画面がヌルヌル動くから、没入感が段違いになるんだと思います。FPSはVR酔いに何よりも直結するので144FPSは非常にありがたいですね。（但しPCの値段もすごいことになりそうです&hellip;）\nCPUって大事なの？\rVRヘッドセットを選ぶとき、プロセッサの性能って、なんか地味だけどすごく大事な要素だと思うんですよね。スタンドアロンで動かすのはもちろん、PCとつないでVRを遊ぶときも、映像をどれだけキレイにスムーズに送れるかって、このチップセットの力にかかってる気がします。\nで、このSteamFrameなんですが、どうやらSnapdragon Series 8 Gen 3っていう、かなり新しいチップを積んでくるらしいんですよね。これ、今出てるVIVE Focus VisionのQualcomm Snapdragon XR2とか、Pico 4 UltraのSnapdragon XR2 Gen 2とかと比べると、世代が一つ先を行ってる感じがして、期待しちゃいます。\n">
+<title>SteamframeをFocusVisionユーザーが考察してみた。</title>
+
+<link rel='canonical' href='http://localhost:1313/posts/steamframe-or-other/'>
+
+<link rel="stylesheet" href="/scss/style.min.4d36f8dc1fd48129e1635deb4b8eb2870fa09474f7280c4cb606d40b2526994b.css"><meta property='og:title' content="SteamframeをFocusVisionユーザーが考察してみた。">
+<meta property='og:description' content="次世代XRヘッドセット SteamFrame!\r最近Steamが様々なゲーミングデバイスを発表したことが有名だ。その中でも、VRChatterを含めたVRユーザーを驚愕させたのがそう、SteamFrameなのだ。 アイトラッキングにハンドトラッキング、ついにベースステーション無しでのインサイドトラッキングにも対応。とんでもない機器が出てきてしまった。\nVRの種類について自分なりの考え\r最近のXRヘッドセットを見てると、色々なメーカーが「次、どこを攻めるか」をすごく考えてるんだなって感じるんですよね。前にVRって言えば「PCに繋ぐか、単体で遊ぶか」の二択だった気がするんですけど、今はもっと細かく分かれてきてる、っていうのが正直な感想です。\nまず、個人的に注目しちゃうのがSteamFrameです。あれはもう、完全に「究極のゲーミングVR体験」に全振りしてるなって印象。Snapdragonのすごいチップとか、16GBのRAMとか、スペックだけ見ても「ゲーム用PCを顔に付けてる」みたいな感じですよね。しかもWi-Fi 7対応で無線なのに有線並みの低遅延って、ValveさんがPCゲーマーをどれだけ大事にしてるかが伝わってくる気がします。アイトラッキングも、たぶんゲームのパフォーマンスを上げるために使ってる部分が大きいんだろうな、って想像しちゃいます。やっぱり、最高のグラフィックでヌルヌル動くVRゲームをストレスなく楽しみたい！っていう層には、これが本命なんだと思います。\nそれと似てるほ方向なのが、VIVE Focus Visionですね。これはもう「VRガチ勢」っていうオーラが出てるというか。片目2448 x 2448ピクセルっていう超高解像度は、普通のVRゲームにはちょっとオーバースペックな気もしますけど、医療のシミュレーションとか、高精細なゲームとか、とにかく細部まで正確に見たいっていう人は、この忠実度が絶対的に重要なんだろうなって思います。高精度なフェイシャルトラッキングも使えるので、VRChatterにも使っているユーザーは少なくないと思います。\nで、MetaのQuestシリーズと、それに対抗するPico 4 Ultraみたいなヘッドセットは、やっぱり「みんなにVR,MR（複合現実）を楽しんでもらいたい」っていう路線に見えます。XR2 Gen 2チップと、綺麗なカラーパススルーカメラを積んで、手軽に現実とデジタルを混ぜ合わせた体験を提供しようとしてる。ただ、フェイシャルトラッキングとか高度な機能がない分、「まずは手軽さを優先して、ディープな機能はプロ向けに」っていう、段階的な戦略なんだろうな、って感じがします。多くの人が触れるきっかけを作る、っていうのが彼らの考えなんだと考えると、この設計は納得できますね。\nこうやって並べてみると、VR市場って昔の「PC vs. スタンドアロン」っていうシンプルな構図から、「最高の性能でPCVRを追求するSteamFrame,Focus Vision」「手軽に楽しむための汎用MRのQuest/Pico」っていう、2つの勢力に分かれてきたんだなぁ、って肌で感じます。\n特に面白いのが、SteamFrameがカラーパススルーやコントローラーレスのハンドトラッキングをあえて搭載してないっていう情報。これって、MetaやPicoが頑張ってる「汎用MR市場」で直接戦うのを避けて、「うちは最高のPCVR体験に集中します！」っていうValveの強い意志の表れなんだと思うんです。自分たちの得意なフィールドで、一番になろうとしてる戦略、これはすごく分かりやすい差別化だなって思いました。\n結局のところ、今のXR市場の競争って、単にチップの性能を競い合うだけじゃなくて、**「誰のために、どんな体験を提供したいか」**っていう、ターゲットに合わせた技術を戦略的に選んでるんだなっていうのが、色々な製品を見ることで見えてくる気がしますね。\nディスプレイと光学系：解像度って結構違う\r新しいVR,XRヘッドセットで「お、いいな」って感じるのは、やっぱり画面がどれだけキレイに見えるか、ってことだと思うんです。これは解像度、リフレッシュレート、あとレンズの構造、この3つで決まる気がしますね。\n解像度でいうと、VIVE Focus Visionを初めて使ったときはちょっと驚きました。片目2448 x 2448って、現行モデルの中ではトップクラスの精細さなんじゃないかな。特にVR上の細かい文字をしっかり読まなきゃいけない場面では、すごく頼りになると思うんですよ。一方で、SteamFrameとPico 4 Ultraは、片目2160 x 2160っていう感じですね。これも十分キレイなんだろうけど、Visionの数字はちょっと別格な気がします。\nちなみに解像度的な比較をすると、VIVE Focus Visionが5K、Quest3が4Kです。 イマイチイメージしにくいので記載しておくと、5Kは1470万画素、**4Kは830万画素（VRだともうちょっと多い）**ので、単純比較は出来ませんが、画素数で比較するとおおよそ ～1.8倍の画素数になるんですよ！実際に使ってみるとFocusVisionって本当にきれいだなってわかります。ただ普段から5Kを使うとPCが悲鳴を上げるので気にしなくてもいいといえばそうなってしまいますが&hellip;\nレンズの話だと、SteamFrameとPico 4 Ultraがパンケーキレンズを採用しているのは、個人的にはすごく嬉しいポイントです。Quest 3もそうだけど、このレンズのおかげで本体がかなり小さく、そして軽くなっているんですよね。特にSteamFrameは、コアユニットが190g、全体でも435gと推定されていて、これはもう「軽い！」としか言いようがない。私、FocusVisionを使っていて重たいなと思っていたのですがまさかの860g!!\u3000これは流石に驚くと同時につけてて重いなという印象です。\nリフレッシュレートについても見てみると、VIVE Focus VisionはDisplayPort接続で120Hzに対応してます。そしてSteamFrameも72Hzから120Hz、さらに実験的に144Hzもサポートするかもしれないって噂があって。フレームレートが高いと、酔いにくくなるし、動きの激しいゲームでも画面がヌルヌル動くから、没入感が段違いになるんだと思います。FPSはVR酔いに何よりも直結するので144FPSは非常にありがたいですね。（但しPCの値段もすごいことになりそうです&hellip;）\nCPUって大事なの？\rVRヘッドセットを選ぶとき、プロセッサの性能って、なんか地味だけどすごく大事な要素だと思うんですよね。スタンドアロンで動かすのはもちろん、PCとつないでVRを遊ぶときも、映像をどれだけキレイにスムーズに送れるかって、このチップセットの力にかかってる気がします。\nで、このSteamFrameなんですが、どうやらSnapdragon Series 8 Gen 3っていう、かなり新しいチップを積んでくるらしいんですよね。これ、今出てるVIVE Focus VisionのQualcomm Snapdragon XR2とか、Pico 4 UltraのSnapdragon XR2 Gen 2とかと比べると、世代が一つ先を行ってる感じがして、期待しちゃいます。\n">
+<meta property='og:url' content='http://localhost:1313/posts/steamframe-or-other/'>
+<meta property='og:site_name' content='にゃおぽぽ'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2025-11-26T19:34:45&#43;09:00'/><meta property='article:modified_time' content='2025-11-26T19:34:45&#43;09:00'/>
+<meta name="twitter:site" content="@https://x.com/miose_nyaoh">
+    <meta name="twitter:creator" content="@https://x.com/miose_nyaoh"><meta name="twitter:title" content="SteamframeをFocusVisionユーザーが考察してみた。">
+<meta name="twitter:description" content="次世代XRヘッドセット SteamFrame!\r最近Steamが様々なゲーミングデバイスを発表したことが有名だ。その中でも、VRChatterを含めたVRユーザーを驚愕させたのがそう、SteamFrameなのだ。 アイトラッキングにハンドトラッキング、ついにベースステーション無しでのインサイドトラッキングにも対応。とんでもない機器が出てきてしまった。\nVRの種類について自分なりの考え\r最近のXRヘッドセットを見てると、色々なメーカーが「次、どこを攻めるか」をすごく考えてるんだなって感じるんですよね。前にVRって言えば「PCに繋ぐか、単体で遊ぶか」の二択だった気がするんですけど、今はもっと細かく分かれてきてる、っていうのが正直な感想です。\nまず、個人的に注目しちゃうのがSteamFrameです。あれはもう、完全に「究極のゲーミングVR体験」に全振りしてるなって印象。Snapdragonのすごいチップとか、16GBのRAMとか、スペックだけ見ても「ゲーム用PCを顔に付けてる」みたいな感じですよね。しかもWi-Fi 7対応で無線なのに有線並みの低遅延って、ValveさんがPCゲーマーをどれだけ大事にしてるかが伝わってくる気がします。アイトラッキングも、たぶんゲームのパフォーマンスを上げるために使ってる部分が大きいんだろうな、って想像しちゃいます。やっぱり、最高のグラフィックでヌルヌル動くVRゲームをストレスなく楽しみたい！っていう層には、これが本命なんだと思います。\nそれと似てるほ方向なのが、VIVE Focus Visionですね。これはもう「VRガチ勢」っていうオーラが出てるというか。片目2448 x 2448ピクセルっていう超高解像度は、普通のVRゲームにはちょっとオーバースペックな気もしますけど、医療のシミュレーションとか、高精細なゲームとか、とにかく細部まで正確に見たいっていう人は、この忠実度が絶対的に重要なんだろうなって思います。高精度なフェイシャルトラッキングも使えるので、VRChatterにも使っているユーザーは少なくないと思います。\nで、MetaのQuestシリーズと、それに対抗するPico 4 Ultraみたいなヘッドセットは、やっぱり「みんなにVR,MR（複合現実）を楽しんでもらいたい」っていう路線に見えます。XR2 Gen 2チップと、綺麗なカラーパススルーカメラを積んで、手軽に現実とデジタルを混ぜ合わせた体験を提供しようとしてる。ただ、フェイシャルトラッキングとか高度な機能がない分、「まずは手軽さを優先して、ディープな機能はプロ向けに」っていう、段階的な戦略なんだろうな、って感じがします。多くの人が触れるきっかけを作る、っていうのが彼らの考えなんだと考えると、この設計は納得できますね。\nこうやって並べてみると、VR市場って昔の「PC vs. スタンドアロン」っていうシンプルな構図から、「最高の性能でPCVRを追求するSteamFrame,Focus Vision」「手軽に楽しむための汎用MRのQuest/Pico」っていう、2つの勢力に分かれてきたんだなぁ、って肌で感じます。\n特に面白いのが、SteamFrameがカラーパススルーやコントローラーレスのハンドトラッキングをあえて搭載してないっていう情報。これって、MetaやPicoが頑張ってる「汎用MR市場」で直接戦うのを避けて、「うちは最高のPCVR体験に集中します！」っていうValveの強い意志の表れなんだと思うんです。自分たちの得意なフィールドで、一番になろうとしてる戦略、これはすごく分かりやすい差別化だなって思いました。\n結局のところ、今のXR市場の競争って、単にチップの性能を競い合うだけじゃなくて、**「誰のために、どんな体験を提供したいか」**っていう、ターゲットに合わせた技術を戦略的に選んでるんだなっていうのが、色々な製品を見ることで見えてくる気がしますね。\nディスプレイと光学系：解像度って結構違う\r新しいVR,XRヘッドセットで「お、いいな」って感じるのは、やっぱり画面がどれだけキレイに見えるか、ってことだと思うんです。これは解像度、リフレッシュレート、あとレンズの構造、この3つで決まる気がしますね。\n解像度でいうと、VIVE Focus Visionを初めて使ったときはちょっと驚きました。片目2448 x 2448って、現行モデルの中ではトップクラスの精細さなんじゃないかな。特にVR上の細かい文字をしっかり読まなきゃいけない場面では、すごく頼りになると思うんですよ。一方で、SteamFrameとPico 4 Ultraは、片目2160 x 2160っていう感じですね。これも十分キレイなんだろうけど、Visionの数字はちょっと別格な気がします。\nちなみに解像度的な比較をすると、VIVE Focus Visionが5K、Quest3が4Kです。 イマイチイメージしにくいので記載しておくと、5Kは1470万画素、**4Kは830万画素（VRだともうちょっと多い）**ので、単純比較は出来ませんが、画素数で比較するとおおよそ ～1.8倍の画素数になるんですよ！実際に使ってみるとFocusVisionって本当にきれいだなってわかります。ただ普段から5Kを使うとPCが悲鳴を上げるので気にしなくてもいいといえばそうなってしまいますが&hellip;\nレンズの話だと、SteamFrameとPico 4 Ultraがパンケーキレンズを採用しているのは、個人的にはすごく嬉しいポイントです。Quest 3もそうだけど、このレンズのおかげで本体がかなり小さく、そして軽くなっているんですよね。特にSteamFrameは、コアユニットが190g、全体でも435gと推定されていて、これはもう「軽い！」としか言いようがない。私、FocusVisionを使っていて重たいなと思っていたのですがまさかの860g!!\u3000これは流石に驚くと同時につけてて重いなという印象です。\nリフレッシュレートについても見てみると、VIVE Focus VisionはDisplayPort接続で120Hzに対応してます。そしてSteamFrameも72Hzから120Hz、さらに実験的に144Hzもサポートするかもしれないって噂があって。フレームレートが高いと、酔いにくくなるし、動きの激しいゲームでも画面がヌルヌル動くから、没入感が段違いになるんだと思います。FPSはVR酔いに何よりも直結するので144FPSは非常にありがたいですね。（但しPCの値段もすごいことになりそうです&hellip;）\nCPUって大事なの？\rVRヘッドセットを選ぶとき、プロセッサの性能って、なんか地味だけどすごく大事な要素だと思うんですよね。スタンドアロンで動かすのはもちろん、PCとつないでVRを遊ぶときも、映像をどれだけキレイにスムーズに送れるかって、このチップセットの力にかかってる気がします。\nで、このSteamFrameなんですが、どうやらSnapdragon Series 8 Gen 3っていう、かなり新しいチップを積んでくるらしいんですよね。これ、今出てるVIVE Focus VisionのQualcomm Snapdragon XR2とか、Pico 4 UltraのSnapdragon XR2 Gen 2とかと比べると、世代が一つ先を行ってる感じがして、期待しちゃいます。\n">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky compact">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/avatar.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">にゃおぽぽ</a></h1>
+            <h2 class="site-description">暇つぶし所</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/games/' >
+                
+                
+                
+                <span>ゲーム</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>ブログ</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>プロフィール</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/contact/' >
+                
+                
+                
+                <span>お問い合わせ</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/steamframe-or-other/">SteamframeをFocusVisionユーザーが考察してみた。</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-11-26T19:34:45&#43;09:00'>Nov 26, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="次世代xrヘッドセット-steamframe"><a href="#%e6%ac%a1%e4%b8%96%e4%bb%a3xr%e3%83%98%e3%83%83%e3%83%89%e3%82%bb%e3%83%83%e3%83%88-steamframe" class="header-anchor"></a><strong>次世代XRヘッドセット SteamFrame!</strong>
+</h1><p>最近Steamが様々なゲーミングデバイスを発表したことが有名だ。その中でも、VRChatterを含めたVRユーザーを驚愕させたのがそう、SteamFrameなのだ。
+アイトラッキングにハンドトラッキング、ついにベースステーション無しでのインサイドトラッキングにも対応。とんでもない機器が出てきてしまった。</p>
+<p><img src="https://clan.akamai.steamstatic.com/images/clan/45479024/8dac8d48ed41ce98ed308549ed128b31.avif"
+	
+	
+	
+	loading="lazy"
+	
+		alt="SteamFrame"
+	
+	
+></p>
+<h2 id="vrの種類について自分なりの考え"><a href="#vr%e3%81%ae%e7%a8%ae%e9%a1%9e%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e8%87%aa%e5%88%86%e3%81%aa%e3%82%8a%e3%81%ae%e8%80%83%e3%81%88" class="header-anchor"></a><strong>VRの種類について自分なりの考え</strong>
+</h2><p>最近のXRヘッドセットを見てると、色々なメーカーが「次、どこを攻めるか」をすごく考えてるんだなって感じるんですよね。前にVRって言えば「PCに繋ぐか、単体で遊ぶか」の二択だった気がするんですけど、今はもっと細かく分かれてきてる、っていうのが正直な感想です。</p>
+<p><img src="https://clan.akamai.steamstatic.com/images/clan/45479024/8dac8d48ed41ce98ed308549ed128b31.avif"
+	
+	
+	
+	loading="lazy"
+	
+		alt="SteamFrame"
+	
+	
+></p>
+<p>まず、個人的に注目しちゃうのが<strong>SteamFrame</strong>です。あれはもう、完全に「究極のゲーミングVR体験」に全振りしてるなって印象。Snapdragonのすごいチップとか、16GBのRAMとか、スペックだけ見ても「ゲーム用PCを顔に付けてる」みたいな感じですよね。しかもWi-Fi 7対応で無線なのに有線並みの低遅延って、ValveさんがPCゲーマーをどれだけ大事にしてるかが伝わってくる気がします。アイトラッキングも、たぶんゲームのパフォーマンスを上げるために使ってる部分が大きいんだろうな、って想像しちゃいます。やっぱり、最高のグラフィックでヌルヌル動くVRゲームをストレスなく楽しみたい！っていう層には、これが本命なんだと思います。</p>
+<p><img src="https://www.vive.com/media/filer_public/fed-assets/vive-focus-vision/images/vive-focus-vision-vr-headset-with-3-vr-games-bottom-cta-1920.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="FocusVison"
+	
+	
+></p>
+<p>それと似てるほ方向なのが、<strong>VIVE Focus Vision</strong>ですね。これはもう「VRガチ勢」っていうオーラが出てるというか。片目2448 x 2448ピクセルっていう超高解像度は、普通のVRゲームにはちょっとオーバースペックな気もしますけど、医療のシミュレーションとか、高精細なゲームとか、とにかく<strong>細部まで正確に見たい</strong>っていう人は、この忠実度が絶対的に重要なんだろうなって思います。高精度なフェイシャルトラッキングも使えるので、VRChatterにも使っているユーザーは少なくないと思います。</p>
+<p><img src="https://p16-picowebsiteimg-va.ibyteimg.com/tos-maliva-i-3sfiono7t4-us/pico_website_new/pico4_front_pc.png~tplv-3sfiono7t4-image.image"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Quest VS pico"
+	
+	
+></p>
+<p>で、MetaのQuestシリーズと、それに対抗する<strong>Pico 4 Ultra</strong>みたいなヘッドセットは、やっぱり「<strong>みんなにVR,MR（複合現実）を楽しんでもらいたい</strong>」っていう路線に見えます。XR2 Gen 2チップと、綺麗なカラーパススルーカメラを積んで、手軽に現実とデジタルを混ぜ合わせた体験を提供しようとしてる。ただ、フェイシャルトラッキングとか高度な機能がない分、「まずは手軽さを優先して、ディープな機能はプロ向けに」っていう、段階的な戦略なんだろうな、って感じがします。多くの人が触れるきっかけを作る、っていうのが彼らの考えなんだと考えると、この設計は納得できますね。</p>
+<p>こうやって並べてみると、VR市場って昔の「PC vs. スタンドアロン」っていうシンプルな構図から、「<strong>最高の性能でPCVRを追求するSteamFrame,Focus Vision</strong>」「<strong>手軽に楽しむための汎用MRのQuest/Pico</strong>」っていう、2つの勢力に分かれてきたんだなぁ、って肌で感じます。</p>
+<p>特に面白いのが、SteamFrameがカラーパススルーやコントローラーレスのハンドトラッキングをあえて搭載してないっていう情報。これって、MetaやPicoが頑張ってる「汎用MR市場」で直接戦うのを避けて、「うちは最高のPCVR体験に集中します！」っていうValveの強い意志の表れなんだと思うんです。自分たちの得意なフィールドで、一番になろうとしてる戦略、これはすごく分かりやすい差別化だなって思いました。</p>
+<p>結局のところ、今のXR市場の競争って、単にチップの性能を競い合うだけじゃなくて、**「誰のために、どんな体験を提供したいか」**っていう、ターゲットに合わせた技術を戦略的に選んでるんだなっていうのが、色々な製品を見ることで見えてくる気がしますね。</p>
+<h3 id="ディスプレイと光学系解像度って結構違う"><a href="#%e3%83%87%e3%82%a3%e3%82%b9%e3%83%97%e3%83%ac%e3%82%a4%e3%81%a8%e5%85%89%e5%ad%a6%e7%b3%bb%e8%a7%a3%e5%83%8f%e5%ba%a6%e3%81%a3%e3%81%a6%e7%b5%90%e6%a7%8b%e9%81%95%e3%81%86" class="header-anchor"></a><strong>ディスプレイと光学系：解像度って結構違う</strong>
+</h3><p>新しいVR,XRヘッドセットで「お、いいな」って感じるのは、やっぱり<strong>画面がどれだけキレイに見えるか</strong>、ってことだと思うんです。これは解像度、リフレッシュレート、あとレンズの構造、この3つで決まる気がしますね。</p>
+<p>解像度でいうと、<strong>VIVE Focus Vision</strong>を初めて使ったときはちょっと驚きました。片目2448 x 2448って、現行モデルの中ではトップクラスの精細さなんじゃないかな。特にVR上の細かい文字をしっかり読まなきゃいけない場面では、すごく頼りになると思うんですよ。一方で、<strong>SteamFrame</strong>と<strong>Pico 4 Ultra</strong>は、片目2160 x 2160っていう感じですね。これも十分キレイなんだろうけど、Visionの数字はちょっと別格な気がします。</p>
+<p>ちなみに解像度的な比較をすると、<strong>VIVE Focus Vision</strong>が5K、<strong>Quest3</strong>が4Kです。
+イマイチイメージしにくいので記載しておくと、<strong>5Kは1470万画素</strong>、**4Kは830万画素（VRだともうちょっと多い）**ので、単純比較は出来ませんが、画素数で比較するとおおよそ ～1.8倍の画素数になるんですよ！実際に使ってみるとFocusVisionって本当にきれいだなってわかります。ただ普段から5Kを使うとPCが悲鳴を上げるので気にしなくてもいいといえばそうなってしまいますが&hellip;</p>
+<p>レンズの話だと、<strong>SteamFrame</strong>と<strong>Pico 4 Ultra</strong>がパンケーキレンズを採用しているのは、個人的にはすごく嬉しいポイントです。Quest 3もそうだけど、このレンズのおかげで本体がかなり小さく、そして軽くなっているんですよね。特に<strong>SteamFrame</strong>は、コアユニットが190g、全体でも435gと推定されていて、これはもう「軽い！」としか言いようがない。私、FocusVisionを使っていて重たいなと思っていたのですがまさかの<strong>860g!!</strong>　これは流石に驚くと同時につけてて重いなという印象です。</p>
+<p>リフレッシュレートについても見てみると、<strong>VIVE Focus Vision</strong>はDisplayPort接続で120Hzに対応してます。そして<strong>SteamFrame</strong>も72Hzから120Hz、さらに実験的に144Hzもサポートするかもしれないって噂があって。フレームレートが高いと、酔いにくくなるし、動きの激しいゲームでも画面がヌルヌル動くから、没入感が段違いになるんだと思います。FPSはVR酔いに何よりも直結するので144FPSは非常にありがたいですね。（但しPCの値段もすごいことになりそうです&hellip;）</p>
+<h3 id="cpuって大事なの"><a href="#cpu%e3%81%a3%e3%81%a6%e5%a4%a7%e4%ba%8b%e3%81%aa%e3%81%ae" class="header-anchor"></a><strong>CPUって大事なの？</strong>
+</h3><p>VRヘッドセットを選ぶとき、プロセッサの性能って、なんか地味だけどすごく大事な要素だと思うんですよね。スタンドアロンで動かすのはもちろん、PCとつないでVRを遊ぶときも、映像をどれだけキレイにスムーズに送れるかって、このチップセットの力にかかってる気がします。</p>
+<p>で、この<strong>SteamFrame</strong>なんですが、どうやらSnapdragon Series 8 Gen 3っていう、かなり新しいチップを積んでくるらしいんですよね。これ、今出てる<strong>VIVE Focus Vision</strong>のQualcomm Snapdragon XR2とか、<strong>Pico 4 Ultra</strong>のSnapdragon XR2 Gen 2とかと比べると、世代が一つ先を行ってる感じがして、期待しちゃいます。</p>
+<p>この差って、ただアプリの動きがちょっと速くなるだけじゃなくて、特にPCVRで使う「Foveated Streaming」みたいな、リアルタイムで頭の位置に合わせて映像の解像度を変えるような複雑な処理に、すごく効いてくるんだろうなって想像しています。</p>
+<p>あと、メモリも<strong>SteamFrame</strong>は16GBのUnified LPDDR5 RAMを搭載するみたいで、他のヘッドセットの12GB LPDDR5 RAM（Focus VisionとかPico 4 Ultra）より、少し余裕があるのも見逃せないポイント。VRって、けっこうメモリを食うことが多いから、OSのSteamOS上で色んな処理をしたり、高画質なPCVRのストリーミングを安定して動かすには、この4GBの差が結構効いてくるんじゃないかな、って勝手に考えています。やっぱり、動作がカクつくのはVR体験を一気に冷めさせちゃうから、このスペックの余裕はすごく安心感につながる気がしますね。</p>
+<p>ただ発熱とかVR専用チップじゃないってところは結構気になるところでもあります。</p>
+<h3 id="通信ってどうなの"><a href="#%e9%80%9a%e4%bf%a1%e3%81%a3%e3%81%a6%e3%81%a9%e3%81%86%e3%81%aa%e3%81%ae" class="header-anchor"></a><strong>通信ってどうなの？</strong>
+</h3><p>ワイヤレス接続の話だと、<strong>SteamFrame</strong>はWi-Fi 7に対応するらしい、っていう噂を聞くと、ちょっとワクワクしますよね。これって、無線でPCVRを楽しむ時の、あの地味な遅延をグッと減らしてくれる、結構すごい進化なんじゃないかと思うんです。有線とほとんど変わらない感覚で遊べるようになったら、かなり体験が変わる気がします。それにドングルを使えば6Eというあんまり普及してない(?)規格を使ってくれるのもいいところ！</p>
+<p>一方で、<strong>VIVE Focus Vision</strong>は、有線接続をすごく大事にしている印象です。DisplayPortに対応したUSB 3.2 Gen 1 Type-Cポートが付いているんですよね。 DisplayPort接続って、画像を圧縮しないから、「絶対画質を落としたくない！」っていう時に頼りになる、保証みたいなものなんだと私は考えています。</p>
+<p>解像度だけで見ると、SteamFrame（2160x2160）はFocus Vision（2448x2448）より低いみたいです。でも、SteamFrameは高性能なGen 3チップとアイトラッキングを組み合わせて、Foveated Rendering（FR）やFoveated Streaming（FS）っていう技術を使うことで、**実際に「きれいに見える度合い」<strong>とか、</strong>「カクつかない安定したフレームレート」**で勝負しようとしているんだと思います。FRっていうのは、自分の目が見ている真ん中の部分だけを高画質で描画する技術で、これのおかげでGPUの負担がすごく軽くなるんですよね。だから、Focus Visionみたいにただ高解像度のディスプレイを載せるよりも、動きの多いゲームとかだと、SteamFrameの方がリアルに見えて、しかも動作が安定する、っていうメリットが出てくるんじゃないかな、と私は感じています。</p>
+<p>あと、使い心地（エルゴノミクス）の面で、Focus Visionがすごく実用的なのが、バッテリーが交換できるところと、予備バッテリーが内蔵されていて、電源を切らずにサッと交換できる（ホットスワップ）ところ 1です。これは、企業向け製品としては、作業を止めないための、すごく気の利いた設計なんだなって思います。まあ私は交換バッテリーも持っていなければ有線接続なので使ったこともないですし、企業が使うならまあいいのではないかな～程度ではあります。それ以前に重すぎる。</p>
+<p>コアハードウェア仕様比較</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">項目</th>
+          <th style="text-align: left">SteamFrame (推定)</th>
+          <th style="text-align: left">VIVE Focus Vision</th>
+          <th style="text-align: left">Pico 4 Ultra</th>
+          <th style="text-align: left">Quest 3 (参考)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>解像度 (片目)</strong></td>
+          <td style="text-align: left">2160 x 2160 (LCD)</td>
+          <td style="text-align: left">2448 x 2448 (LCD)</td>
+          <td style="text-align: left">2160 x 2160 (LCD)</td>
+          <td style="text-align: left">2064 x 2208 (LCD)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>リフレッシュレート</strong></td>
+          <td style="text-align: left">72–120Hz (144Hz実験的)</td>
+          <td style="text-align: left">120Hz (DisplayPort時)</td>
+          <td style="text-align: left">90Hz</td>
+          <td style="text-align: left">90/120Hz</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>プロセッサ</strong></td>
+          <td style="text-align: left">Snapdragon Series 8 Gen 3 (SM8650)</td>
+          <td style="text-align: left">Qualcomm Snapdragon XR2</td>
+          <td style="text-align: left">Snapdragon XR2 Gen 2</td>
+          <td style="text-align: left">Snapdragon XR2 Gen 2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>RAM</strong></td>
+          <td style="text-align: left">16GB LPDDR5</td>
+          <td style="text-align: left">12GB LPDDR5</td>
+          <td style="text-align: left">12GB LPDDR5</td>
+          <td style="text-align: left">8GB</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>レンズタイプ</strong></td>
+          <td style="text-align: left">パンケーキ</td>
+          <td style="text-align: left">LCDパネル</td>
+          <td style="text-align: left">パンケーキ</td>
+          <td style="text-align: left">パンケーキ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>ワイヤレス接続</strong></td>
+          <td style="text-align: left">Wi-Fi 7</td>
+          <td style="text-align: left">Wi-Fi 6, 6E</td>
+          <td style="text-align: left">Wi-Fi 7</td>
+          <td style="text-align: left">Wi-Fi 6E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>有線PCVR接続</strong></td>
+          <td style="text-align: left">不明 (USB-C)</td>
+          <td style="text-align: left">DisplayPort 対応 USB-C</td>
+          <td style="text-align: left">USB-C</td>
+          <td style="text-align: left">USB-C</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="高度なトラッキング機能の深掘りsteamframe-vs-focus-vision"><a href="#%e9%ab%98%e5%ba%a6%e3%81%aa%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e6%a9%9f%e8%83%bd%e3%81%ae%e6%b7%b1%e6%8e%98%e3%82%8asteamframe-vs-focus-vision" class="header-anchor"></a><strong>高度なトラッキング機能の深掘り：SteamFrame vs. Focus Vision</strong>
+</h2><p>XRヘッドセットって、最近ぐっと身近になってきましたよね。その中でも、アイトラッキング（ET）、ハンドトラッキング（HT）、フェイシャルトラッキング（FT）みたいな機能が、どれだけスムーズに動くかって、個人的にはかなり重要だと思うんです。</p>
+<p>このトラッキング機能、没入感を高めるのはもちろん、相手とのコミュニケーションで自分の表情まで理解してもらえるって言う点で非常にいいものだと思ってるんですよね。</p>
+<p>で、SteamFrameとVIVE Focus Vision、この2つを比べてみると、これらのトラッキング機能をどういう風に組み込んで、何を目的に使おうとしているのか、その戦略に結構はっきりとした違いがある気がするんですよね。それぞれのメーカーが、ユーザーにどんな体験をしてほしいか、という考え方の違いが、機能の実装方法にも出ているんだと私は考えます。</p>
+<h3 id="アイトラッキング-etの比較"><a href="#%e3%82%a2%e3%82%a4%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0-et%e3%81%ae%e6%af%94%e8%bc%83" class="header-anchor"></a><strong>アイトラッキング (ET)の比較</strong>
+</h3><p>VIVE Focus Visionのアイトラッキングって、かなり「仕事用」っていうのを意識してるんだな〜って感じます。視線データを出力する周波数が120Hzとか、精度が「20度の視野内で0.5度から1.1度」って、数値までしっかり公表されてるんですよね。これって、多分、ただのエンタメじゃなくて、例えば研修プログラムの分析とか、視線で機器を正確に操作したいみたいな、<strong>データの信頼性</strong>がすごく求められるシミュレーションで使ってほしいんだろうな〜って思っちゃいます。もちろんVRChatなどのコミュニケーションにおいても圧倒的なリアリティがあるので一目置かれます。</p>
+<p>それに、自動でIPD（瞳孔間距離）を調整してくれる機能も付いてて、友達に貸すっていうときに便利です。色々な人が使う場面だと、さっと装着してすぐに使えるって、すごく大事なポイントですよね。いちいち手動で調整しなくて済むのは、ありがたいなと使ってて思いました。</p>
+<p>で、SteamFrameの方も、内部のカメラでアイトラッキング（ET）に対応してるんだけど、こっちはもう、完全に<strong>ゲーム体験を良くする</strong>ためにあるんだな、って印象です。SteamFrameでのETの役割って、いわゆる「Foveated Rendering/Streaming」を実現すること。つまり、自分が見てる場所にだけPCのグラフィックリソースを全力で集中させて、見てないところはちょっとサボる、みたいな感じですね。これのおかげで、ワイヤレスPCVRの限界性能をグッと引き上げられるんだろうな、って思います。このアイトラッキングデータはSteamアプリで使えるみたいなので、一つの機能で２つのことをできるのはかなり強みなのかなって思います。</p>
+<p>Focus Visionが<strong>視線の「正確さ」<strong>をとことん追求しているのに対して、SteamFrameはETを</strong>ゲームのパフォーマンスを上げる</strong>ための道具として考えてる、っていう立ち位置の違いが、はっきりしてる気がします。</p>
+<h3 id="ハンドトラッキング-ht"><a href="#%e3%83%8f%e3%83%b3%e3%83%89%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0-ht" class="header-anchor"></a><strong>ハンドトラッキング (HT)</strong>
+</h3><p>VRヘッドセットを選ぶとき、コントローラーなしで操作できるハンドトラッキング（HT）機能って、結構大事なポイントだと思うんです。</p>
+<p>でも、<strong>SteamFrame</strong>について流れてくる情報を見ていると、どうもこのハンドトラッキングに関しては話が少し違うみたいで&hellip;最新の情報だと、SteamFrameはあえてコントローラーなしのHTを入れないで、コントローラーでの操作を優先する方向みたいなんです。</p>
+<p>これ、Valveの狙っている層を考えると、なるほどなって気がします。SteamFrameって、やっぱりPCVRでゴリゴリゲームをしたい人たちがターゲットだと思うんですよね。そういうゲーマーさんたちは、やっぱり遅延が少なくて正確な、物理的なコントローラー操作が好きなんじゃないかな。MR空間で手のジェスチャーで操作ってあんまり皆さん使わないですし、統合されていたほうが何かとバーチャル空間の移動とか楽ちんですしね！</p>
+<p>だからSteamFrameは、コントローラーをなくすよりも、最高のPCVRゲーミング体験という、一番大事なところに力を注ぐ戦略を選んだ、ってことなんでしょうね。個人的には、コントローラーでガッツリ遊ぶのが好きなので、この方針は納得できます。</p>
+<p>対照的に、<strong>Pico 4 Ultra</strong>は、設定からネイティブなハンドトラッキングに対応しているんですよね。これはMRとかで、本当に自然な動きで操作したい人には、すごく魅力的に映るはず。</p>
+<p><strong>Focus Vision</strong>については&hellip;いいね！しか出来ないハンドトラッキングは現状全く持って不要なので使っていません。グローブ型コントローラー必須ですね&hellip;</p>
+<h3 id="フェイシャルトラッキング-ft"><a href="#%e3%83%95%e3%82%a7%e3%82%a4%e3%82%b7%e3%83%a3%e3%83%ab%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0-ft" class="header-anchor"></a><strong>フェイシャルトラッキング (FT)</strong>
+</h3><p>VRで遊ぶとき、「フェイシャルトラッキング（FT）」って、すごく大事な機能だと思うんですよね。特にVRChatみたいなソーシャルVRだと、自分の表情がアバターに反映されるだけで、没入感がぐっと上がるんですよ。</p>
+<p>例えば、「<strong>VIVE Focus Vision</strong>」の場合、標準ではFTは付いてないんだけど、専用の「VIVE フェイシャル トラッカー」っていうのを後付けできるのが、すごく柔軟で良いなと感じます。これさえあれば、PCVR（VRChatとか）にも表情データを出せるので、純粋にソーシャルで楽しみたい人も、どっちにも対応できるのが、ユーザーとしては安心感があるなあって。あとは<strong>Quest Pro</strong>とかと違う点としてベロが左右にも動いたりとかなり強いです。さすが企業用&hellip;</p>
+<p>一方で、「<strong>SteamFrame</strong>」は、FTがネイティブ搭載されないものの、アタッチメントを取り付けられる可能性があるとのことなので、結構焦っています。<strong>FocusVision</strong>と全く同じやり方で簡単に追加できてしまうならお手軽さで完全に負けてしまうからです&hellip;値段も純粋に安いことも考えるとここはもし追加できるならかなり軍配が上がってしまいそうです。</p>
+<p>FTが追加されるされないにしろ、個人的には楽しみにしています。まぁ、軽さは正義ですからね！</p>
+<p>高度トラッキング機能の比較</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">機能</th>
+          <th style="text-align: left">SteamFrame (推定)</th>
+          <th style="text-align: left">VIVE Focus Vision</th>
+          <th style="text-align: left">Pico 4 Ultra</th>
+          <th style="text-align: left">Quest 3 (参考)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>アイトラッキング (ET)</strong></td>
+          <td style="text-align: left">ネイティブ対応 (デュアルカメラ)</td>
+          <td style="text-align: left">ネイティブ対応 (高精度: 0.5°–1.1°)</td>
+          <td style="text-align: left">非対応 (Proモデルのみ)</td>
+          <td style="text-align: left">非対応</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>ハンドトラッキング (HT)</strong></td>
+          <td style="text-align: left">非対応の可能性 (コントローラー優先)</td>
+          <td style="text-align: left">あるけどゲーム向けではない</td>
+          <td style="text-align: left">ネイティブ対応</td>
+          <td style="text-align: left">ネイティブ対応</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>フェイシャルトラッキング (FT)</strong></td>
+          <td style="text-align: left">ネイティブ非対応の噂</td>
+          <td style="text-align: left">モジュール式アクセサリ対応</td>
+          <td style="text-align: left">非対応 (Proモデルのみ)</td>
+          <td style="text-align: left">非対応 (Proモデルのみ)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>カラーパススルー</strong></td>
+          <td style="text-align: left">意図的に省略の噂</td>
+          <td style="text-align: left">対応 (高解像度 x 2)</td>
+          <td style="text-align: left">対応 (32MP x 2)</td>
+          <td style="text-align: left">対応 (ステレオ)</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="steamosとfoveated-streamingの統合"><a href="#steamos%e3%81%a8foveated-streaming%e3%81%ae%e7%b5%b1%e5%90%88" class="header-anchor"></a><strong>SteamOSとFoveated Streamingの統合</strong>
+</h3><p>SteamFrameがすごいなと思うのは、やっぱりOSレベルでしっかり作り込まれているってところだと思うんです。Steam Deckと同じく、多分SteamOSで動くんじゃないかな？そうだとすると、めちゃくちゃ広いPCVRのゲームライブラリがそのまま動く互換性がありつつ、Valve独自の「これぞ最適化！」みたいなレイヤーをしっかり活かせるんじゃないかと期待しています。</p>
+<p>この最適化のキモになっているのが、「アイトラッキングを使ったFoveated Streaming（FS）」という技術なんだそうです。高性能なWi-Fi 7接続とこれがタッグを組むことで、目線が向いているところだけを高画質で送る、賢い映像圧縮・伝送ができるわけですよね。</p>
+<p>これって、個人的には結構大きなポイントだと思うんですよ。例えば、VIVE Focus Visionみたいに、ロスレスな映像のために「有線DisplayPortケーブルが必須！」ってなると、どうしてもケーブルの存在が気になっちゃいますよね。でも、SteamFrameならワイヤレスなのに、有線に負けないくらい、体感としてすごく質の高いVR体験を効率よく提供できるはず。この複雑な、目線に合わせて動的にレンダリングしてストリーミングする処理を、遅延なくサクサク動かす土台になっているのが、高性能なSnapdragon S8 Gen 3と16GB RAMっていうパワフルなスペックなんだろうな、と考えています。ワイヤレスでこれだけ快適だったら、VRの世界への没入感がぐっと深まる気がしますね。</p>
+<h2 id="vive-focus-visionとの競合"><a href="#vive-focus-vision%e3%81%a8%e3%81%ae%e7%ab%b6%e5%90%88" class="header-anchor"></a><strong>VIVE Focus Visionとの競合</strong>
+</h2><p>VIVE Focus VisionとSteamFrame、どちらも「次世代のすごいVR体験」を目指してるっていう点では、たしかに共通してると思うんですよね。でも、なんとなくターゲットにしている層とか、技術的なこだわりどころが結構違うんじゃないかな、って気がします。</p>
+<p>個人的な印象だけど、この2つは「ガチで競合してる！」っていうよりは、企業か個人ゲーマかをすみ分けしてる感じなんだと思います。だから、どっちが良いとか悪いとかじゃなくて、ユーザーが何を求めているかで選ぶものが変わってくるんだろうな、って考えています。</p>
+<p>最近使ってて思うのは、VIVE Focus Visionは、スペックを見ても「これは完全にビジネス向けだよね」って印象を受けてます。高い精度が求められるシミュレーションとか、遠隔での医療なんかで使うプロの人たちを主なターゲットにしてるんだろうなって思う。長時間つけても疲れにくいように、自動で瞳孔間距離（IPD）を調整してくれたり、マグネットでパッと取り外せるクッションがあったり、バッテリーも交換できるホットスワップに対応しているのを見ると、本当に信頼性とか「スタンドアロンでちゃんと使えること」をすごく意識して作られているんだなと感じるよ。</p>
+<p>一方で、SteamFrameは、もう名前からしてゲーム好きにはたまらない感じがする。Steamっていう強力なゲームプラットフォームがあるし、最新のGen 3チップに16GB RAMっていう圧倒的な高性能っぷりを見せつけられると、「これはハイエンドなPCゲーマーのためにあるんだ」って思うんだよね。実際、軽さ（435g）は感動ものだし、ケーブルなしで最高のパフォーマンスを長時間楽しめるようにWi-Fi 7にも対応しているらしいから、とことん没入感を追求したいゲーマーの要求に、バッチリ応えてくれるんだろうなって気がする。</p>
+<h3 id="focusvisionとsteamframeの比較"><a href="#focusvision%e3%81%a8steamframe%e3%81%ae%e6%af%94%e8%bc%83" class="header-anchor"></a><strong>FocusVisionとSteamFrameの比較</strong>
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">項目</th>
+          <th style="text-align: left">Focus Visionの優位性</th>
+          <th style="text-align: left">SteamFrameの優位性</th>
+          <th style="text-align: left">ユーザー体験の差異</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>解像度/忠実度</strong></td>
+          <td style="text-align: left">絶対解像度 (2448p)</td>
+          <td style="text-align: left">動的レンダリング品質 (FR/FS)、Gen 3チップ</td>
+          <td style="text-align: left">Focus Visionは静的な高精細度、SteamFrameは動的な高忠実度と安定性。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>アイトラッキング (ET)</strong></td>
+          <td style="text-align: left">公称精度 (0.5°–1.1°)、自動IPD</td>
+          <td style="text-align: left">ゲーミング性能最適化 (FR/FS)</td>
+          <td style="text-align: left">Focus Visionはデータ信頼性、SteamFrameはパフォーマンス向上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>接続性</strong></td>
+          <td style="text-align: left">DisplayPort対応有線接続</td>
+          <td style="text-align: left">Wi-Fi 7による超低遅延ワイヤレス 3</td>
+          <td style="text-align: left">Focus Visionはロスレスの保証、SteamFrameは最高のワイヤレス自由度。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>稼働時間</strong></td>
+          <td style="text-align: left">ホットスワップバッテリー</td>
+          <td style="text-align: left">軽量性 (435g)</td>
+          <td style="text-align: left">Focus Visionは長時間の連続稼働、SteamFrameは身体的な快適性。</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>解像度だけで見ると、たしかにFocus Visionの方がちょっとだけ上にいる気がするんですよね。でも、SteamFrameは新しいチップとETっていう技術をうまく組み合わせて、ワイヤレスなのに有線と比べても遜色ないくらいキレイな映像と、フレームレートの安定さを実現してるっていうのがすごいところ。</p>
+<p>Focus Visionはね、スペックの公開がすごく厳密で、企業のお客さんが「これに投資したらどれだけリターンがあるかな？」っていうのをしっかり計算できるようにしてるんだと思うんです。データ集めたりシミュレーションしたりする時の信頼性は、Focus Visionの方が一枚上手かもしれません。それに、自動IPD調整とか精密なアイトラッキング機能は、例えば研修施設みたいにたくさんの人が使う場所だと、設定の手間がグッと減るから、それだけでも大きなコスト削減につながるんじゃないかな、って考えるんですよね。</p>
+<p>一方でSteamFrameのチップとRAMの組み合わせは、「とにかく性能がアップしました！」みたいな、ちょっと抽象的な約束をしている気がします。これは、どっちかというとゲームをよくする人たちの期待値を上げることに力を入れているんだろうな、と個人的には感じました。</p>
+<h3 id="システムの拡張性"><a href="#%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e6%8b%a1%e5%bc%b5%e6%80%a7" class="header-anchor"></a><strong>システムの拡張性</strong>
+</h3><p><strong>VIVE Focus Vision</strong>の話だけど、これってビジネス向けって感じが強いんだよね。モジュール式で色々拡張できるのがいいみたいで。FTアクセサリを追加できるってことは、企業や個人の特殊な使い方に柔軟に対応できるってことなんだろうな。</p>
+<p>一方の<strong>SteamFrame</strong>は、やっぱりゲーマーとしてはこっちに目がいっちゃう。PCVRのタイトルがもう数えきれないほどあって、それをそのまま遊べるってのがすごいよね。ValveがOSをどんどん最適化してくれるみたいだし、コンシューマー向けとしては、コンテンツの豊富さと、ゲームに特化した体験が強みなんだろうな、って感じる。</p>
+<p>個人的には、家でゴロゴロしながらゲームしたいから、SteamFrameの方が惹かれるかな。企業とかVtuberさんとかが使うなら、Focus Visionの堅実さが必要なんだろうけど。</p>
+<p><strong>個人的な感想：SteamFrameがPCVRの未来をどう変えるか</strong></p>
+<p>SteamFrameがもし本当に市場に出てきたら、PCVRの体験はガラッと変わっちゃうだろうなって気がしています。高性能なプロセッサとか、メモリの量、最新のWi-Fi 7、そして特に<strong>アイトラッキングを活用したFoveated Streaming</strong>の組み合わせ。これって、ワイヤレスなのに有線とほとんど変わらないレベルのパフォーマンスを出せるってことですよね。</p>
+<p>私自身、今使ってるFocusVisionでPCVRを遊ぶとき、やっぱり無線はラグいなって思っちゃってます。でも、SteamFrameなら、そういう「ワイヤレスだから仕方ないか」っていう妥協が初めてなくなるんじゃないかな、って期待してます。VRゲーマーとしては、最高のグラフィックで、コードに縛られない自由さを同時に手に入れられるっていうのは、夢みたい話だと思うんですよね。</p>
+<p><strong>ちょっと心配なこと：MRとソーシャルVRの行方</strong></p>
+<p>一番気になってるのは、アイトラッキングデータがどんな感じなのかわからないことなんですよね。瞬きは対応してるのかとか、将来口元もトラッキングできるのかとか。さらに言えばどれくらいの制度でトラッキングできるのか。トラッキングのFPSはどれくらいなのかとか&hellip;</p>
+<p>SteamFrameが「純粋な高性能PCVRの王者」を目指すのはすごく理解できるけど、この思い切った「切り捨て」が、吉と出るか凶と出るかは、発売されてみないとわからないですね。</p>
+<h3 id="63-最終的な戦略的提言"><a href="#63-%e6%9c%80%e7%b5%82%e7%9a%84%e3%81%aa%e6%88%a6%e7%95%a5%e7%9a%84%e6%8f%90%e8%a8%80" class="header-anchor"></a><strong>6.3. 最終的な戦略的提言</strong>
+</h3><p>VR開発に携わる身として、新しいSteamFrameの登場は、正直、かなりワクワクする出来事です。</p>
+<p>特に、PCVRコンテンツを作る上での「レンダリングのやり方」が大きく変わるんだろうな、と個人的には感じています。一番大事になってくるのは、やっぱり<strong>アイトラッキングとFoveated Rendering/Streamingの技術</strong>をどれだけうまく使えるか、なんだと思うんです。</p>
+<p>だって、SteamFrameってすごく性能が良いみたいだから、その力を最大限に引き出すには、コンテンツ側がちゃんと最適化されていないと、もったいないじゃないですか。これからのハイエンドなPCVRゲームが成功するかどうかは、この最適化にかかっている、と言っても過言ではない気がします。私も、自分のプロジェクトでどう取り入れるか、今から色々試してみようと考えているところです。&mdash;&ndash;あと、市場全体の話でいうと、どっちに注目して投資するか、っていうのは結構好みが分かれるポイントですよね。</p>
+<p>個人的に一番熱い視線を送ってしまうのは、やっぱり<strong>SteamFrame</strong>の動向なんですよね。何と言っても、あの世界最大のPCゲームプラットフォームであるSteamのエコシステムで、新しいイノベーションが起こるわけですから。ハイエンドなゲーム体験を求める人たちにとっては、これが「決定版」になる可能性を秘めている、と私は考えています。</p>
+<p>それから、<strong>Pico 4 Ultra</strong>も地味にすごい存在感があるんですよ。Quest 3と比べても高解像度だし、価格的にも魅力的なMRの選択肢として、特にアジア圏ではかなり強いんじゃないかな。私も以前、Pico 4を触ったことがあるんですが、あの軽量さと画質はやっぱり魅力的でした。</p>
+<p>どのヘッドセットもそれぞれに魅力があって、VR業界全体が面白くなってきたな、というのが今の率直な感想です。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Nyaoh popo All Rights Reserved.
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.87d8f4a6edca348e5a3a84db9dfdec4176c602c5f275a3a460a62dc2c524d3fd.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
