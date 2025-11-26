@@ -1,40 +1,18 @@
 baseURL = 'https://nyaohpopo.cc/' # 仮のドメインに修正 (必ずマスターのドメインに合わせること!)
 languageCode = 'ja-jp'
-title = 'Nyaoh popo!'
+title = 'にゃおぽぽ'
 theme = 'stack'
 copyright = "Nyaoh popo All Rights Reserved." # コピーライトを正式な表記に修正
 
 [params]
-
-  SEOTitle = "にゃおぽぽ"
-  description = "学生による小さな小さなゲームの隠れ場"
-  favicon = "/images/favicon.ico"
+  customCSS = [
+    "css/extended/avatar.css",
+    "css/extended/links.css",
+    "css/extended/cards.css",
+    "css/extended/colors.css"
+  ]
 
 [params.profile]
-  avatar = "/images/avatar.png" 
+  avatar = "/images/avatar.png"
   name = "Nyaoh"
   bio = "世界を目指す原石のために"
-
-# =======================================================
-# ▼▼▼【修正】メニュー設定 ▼▼▼
-# サイトについて → 企業情報 (よりビジネスっぽく)
-# =======================================================
-[[menu.main]]
-  name = "サービス"
-  url = "/services/"
-  weight = 10
-
-[[menu.main]]
-  name = "企業情報" # 名称をよりビジネスライクに変更
-  url = "/about/" 
-  weight = 20
-
-[[menu.main]]
-  name = "ブログ/ニュース" # ブログがあれば追加
-  url = "/posts/" 
-  weight = 30
-  
-[[menu.main]]
-  name = "お問い合わせ"
-  url = "/contact/"
-  weight = 40

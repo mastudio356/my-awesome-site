@@ -1,0 +1,45 @@
+baseURL = 'https://nyaohpopo.cc/' 
+languageCode = 'ja-jp'
+title = 'Nyaoh popo!'
+theme = 'stack'
+copyright = "Nyaoh popo All Rights Reserved." 
+
+# =======================================================
+# ▼▼▼ [params]：サイト共通設定 ▼▼▼
+# =======================================================
+[params]
+  SEOTitle = "にゃおぽぽ"
+  description = "学生による小さな小さなゲームの隠れ場"
+  favicon = "/images/favicon.ico"
+
+# =======================================================
+# ▼▼▼ [params.profile]：Stackテーマのアバター設定 ▼▼▼
+# =======================================================
+[params.profile]
+  avatar = "/images/avatar.png" 
+  name = "Nyaoh popo!"
+  bio = "世界を目指す原石のために"
+
+
+# =======================================================
+# ▼▼▼ メニュー設定 エラー回避のため [menu] ヘッダーは削除！ ▼▼▼
+# =======================================================
+[[menu.main]]
+  name = "ゲーム"
+  url = "/games/"
+  weight = 10
+
+[[menu.main]]
+  name = "ブログ"
+  url = "/posts/"
+  weight = 20
+
+[[menu.main]]
+  name = "プロフィール"
+  url = "/about/"
+  weight = 30
+
+[[menu.main]]
+  name = "お問い合わせ"
+  url = "/contact/"
+  weight = 40
