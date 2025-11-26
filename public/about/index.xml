@@ -1,38 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>ホームページ on にゃおぽぽ</title>
-        <link>http://localhost:1313/</link>
-        <description>Recent content in ホームページ on にゃおぽぽ</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>ja-JP</language>
-        <copyright>Nyaoh popo All Rights Reserved.</copyright>
-        <lastBuildDate>Tue, 25 Nov 2025 15:18:21 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>お問い合わせ</title>
-        <link>http://localhost:1313/contact/</link>
-        <pubDate>Tue, 25 Nov 2025 15:18:21 +0900</pubDate>
-        
-        <guid>http://localhost:1313/contact/</guid>
-        <description>&lt;p&gt;サイトに関するお問い合わせは管理者のXにお願い致します。
-&lt;a class=&#34;link&#34; href=&#34;https://x.com/miose_nyaoh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://x.com/miose_nyaoh&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>ゲームを公開しています。</title>
-        <link>http://localhost:1313/games/</link>
-        <pubDate>Tue, 25 Nov 2025 15:18:21 +0900</pubDate>
-        
-        <guid>http://localhost:1313/games/</guid>
-        <description>&lt;p&gt;ゲームを公開しています。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>私について</title>
+        <title>Abouts on にゃおぽぽ</title>
         <link>http://localhost:1313/about/</link>
+        <description>Recent content in Abouts on にゃおぽぽ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <copyright>Nyaoh popo All Rights Reserved.</copyright>
+        <lastBuildDate>Tue, 25 Nov 2025 15:18:21 +0900</lastBuildDate><atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>私について</title>
+        <link>http://localhost:1313/about/about/</link>
         <pubDate>Tue, 25 Nov 2025 15:18:21 +0900</pubDate>
         
-        <guid>http://localhost:1313/about/</guid>
+        <guid>http://localhost:1313/about/about/</guid>
         <description>&lt;p&gt;改めまして。ごく普通の学生です。&lt;/p&gt;
 &lt;p&gt;周りからは&lt;strong&gt;結構、物事を深く考えすぎるタイプ&lt;/strong&gt;って言われることが多いと思います。何かを始めるとき、準備に時間をかけちゃうし、「本当にこれで大丈夫か？」って何回も確認しないと不安になります（家を出る前に何度もバックの中身確認しちゃったりとか&amp;hellip;）。&lt;/p&gt;
 &lt;p&gt;趣味は、最近はプログラミングか音楽鑑賞です。&lt;/p&gt;
@@ -42,15 +22,6 @@
 &lt;p&gt;余談ではありますが圧倒的に音ゲーが大好きです。初めてはプロセカを友だちから借りて一度プレイしたことがきっかけかな？（本当に出た当時にプレイしました）
 音ゲー沼にハマってからは、プロセカ以外にも&lt;strong&gt;ガルバ、D4DJ、SDVX、Rotaeno、Rizline&lt;/strong&gt;などかなり特殊な音ゲーをプレイしだして止まりません&amp;hellip;
 音ゲーから曲を聞きに行くことが多いので音ゲーの曲は大体把握してます！個人的に好きなのは &lt;strong&gt;柊マグネタイト&lt;/strong&gt; さんの &lt;strong&gt;リアライズ&lt;/strong&gt;っていう曲かな。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>First Post</title>
-        <link>http://localhost:1313/posts/first-post/</link>
-        <pubDate>Tue, 25 Nov 2025 14:36:45 +0900</pubDate>
-        
-        <guid>http://localhost:1313/posts/first-post/</guid>
-        <description>&lt;p&gt;Hello world!&lt;/p&gt;
 </description>
         </item>
         

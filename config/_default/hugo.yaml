@@ -4,15 +4,7 @@ module:
         min: "0.87.0"
 
 params:
-
-    customCSS : [
-        "assets/css/extended/avatar.css",
-        "assets/css/extended/links.css",
-        "assets/css/extended/cards.css",
-        "assets/css/extended/colors.css"
-    ]
-
-    mainSections:
+    mainSections: 
         - post
     featuredImageField: image
     rssFullContent: true
@@ -29,15 +21,15 @@ params:
     sidebar:
         compact: true
         emoji:
-        subtitle:
+        subtitle: 暇つぶし所
         avatar:
             enabled: true
             local: false
             src: /images/avatar.png
 
     article:
-        headingAnchor: false
-        math: false
+        headingAnchor: true
+        math: true
         toc: true
         readingTime: true
         license:
@@ -126,13 +118,23 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage:
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+            - type: categories
+              params:
+                  limit: 10
 
     opengraph:
         twitter:
             # Your Twitter username
-            site: miose_nyaoh
+            site: https://x.com/miose_nyaoh
 
             # Available values: summary, summary_large_image
             card: summary_large_image
