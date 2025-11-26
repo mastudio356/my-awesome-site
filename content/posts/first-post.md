@@ -31,12 +31,7 @@ RTX5050はゴリゴリのAAAゲームをするには不向きだが、FullHDの�
 **GTA5　エンハンスト**
 GTA5 エンハンストをオンラインでプレイしたとき、以下のような結果になった。初回起動ではゲーム内画質設定は **高レイトレーシング** となっていた。web用に圧縮しているが、以下が該当画質でのゲーム画像だ。
 
-<img 
-  src="/images/gta5e_view.png" 
-  alt="gta5e" 
-  width="800" 
-  style="border-radius: 10px; display: block; margin: 0 auto;"
->
+![screenshot](/images/gta5e_view.png)
 
 FPSとしては
 ビル群の並ぶ都心部で平均120FPS、最高130FPS
