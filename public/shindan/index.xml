@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ホームページ on にゃおぽぽ</title>
+        <link>http://localhost:1313/shindan/</link>
+        <description>Recent content in ホームページ on にゃおぽぽ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-JP</language>
+        <copyright>Nyaoh popo All Rights Reserved.</copyright>
+        <lastBuildDate>Wed, 26 Nov 2025 23:39:54 +0900</lastBuildDate><atom:link href="http://localhost:1313/shindan/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>nyaohとの相性診断</title>
+        <link>http://localhost:1313/shindan/nyaoh_aisyou/</link>
+        <pubDate>Wed, 26 Nov 2025 23:39:54 +0900</pubDate>
+        
+        <guid>http://localhost:1313/shindan/nyaoh_aisyou/</guid>
+        <description>
+&lt;div id=&#34;quiz-container&#34;&gt;
+  &lt;div id=&#34;quiz-intro&#34; class=&#34;quiz-section active&#34;&gt;
+    &lt;h2&gt;nyaohとの相性診断&lt;/h2&gt;
+    &lt;p&gt;いくつかの質問に答えて、あなたとnyaohの相性をチェックしましょう&lt;/p&gt;
+    &lt;button onclick=&#34;startQuiz()&#34; class=&#34;btn-primary&#34;&gt;診断を開始&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;quiz-questions&#34; class=&#34;quiz-section&#34;&gt;
+    &lt;div class=&#34;progress-bar&#34;&gt;
+      &lt;div id=&#34;progress&#34; class=&#34;progress-fill&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;question-counter&#34;&gt;質問 &lt;span id=&#34;current-q&#34;&gt;1&lt;/span&gt; / &lt;span id=&#34;total-q&#34;&gt;5&lt;/span&gt;&lt;/p&gt;
+    
+    &lt;div id=&#34;question-content&#34;&gt;
+      &lt;h3 id=&#34;question-text&#34;&gt;&lt;/h3&gt;
+      &lt;div id=&#34;answer-options&#34; class=&#34;answer-grid&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;quiz-result&#34; class=&#34;quiz-section&#34;&gt;
+    &lt;h2&gt;診断結果&lt;/h2&gt;
+    &lt;div class=&#34;result-display&#34;&gt;
+      &lt;div class=&#34;result-item&#34;&gt;
+        &lt;h3&gt;友達相性&lt;/h3&gt;
+        &lt;div class=&#34;result-percentage&#34; id=&#34;final-friend&#34;&gt;50%&lt;/div&gt;
+        &lt;p id=&#34;friend-message&#34;&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;result-item&#34;&gt;
+        &lt;h3&gt;恋愛相性&lt;/h3&gt;
+        &lt;div class=&#34;result-percentage&#34; id=&#34;final-love&#34;&gt;50%&lt;/div&gt;
+        &lt;p id=&#34;love-message&#34;&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;text-align: center; margin-top: 2rem;&#34;&gt;
+      &lt;button onclick=&#34;resetQuiz()&#34; class=&#34;btn-primary&#34;&gt;もう一度診断する&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+* {
+  box-sizing: border-box;
+}
+
+#quiz-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.quiz-section {
+  display: none;
+  padding: 3rem 2.5rem;
+}
+
+.quiz-section.active {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(8px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* イントロ画面 */
+#quiz-intro {
+  text-align: center;
+}
+
+#quiz-intro h2 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+#quiz-intro p {
+  font-size: 1.05rem;
+  color: #6b7280;
+  margin: 0 0 2.5rem 0;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+  font-family: inherit;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* プログレスバー */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #e5e7eb;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0%;
+}
+
+.question-counter {
+  text-align: center;
+  color: #6b7280;
+  margin: 0 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+#question-text {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #1f2937;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* 質問と選択肢 */
+.answer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.answer-btn {
+  padding: 1.25rem 1.5rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  font-size: 1rem;
+  color: #1f2937;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: inherit;
+}
+
+.answer-btn:hover {
+  border-color: #2563eb;
+  background: #ffffff;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+}
+
+.answer-btn:active {
+  transform: translateX(2px);
+}
+
+/* 結果画面 */
+#quiz-result h2 {
+  text-align: center;
+  color: #1a1a1a;
+  margin: 0 0 2.5rem 0;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.result-display {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 0 0 2.5rem 0;
+}
+
+.result-item {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.result-item h3 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.125rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.result-percentage {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.result-item p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+#quiz-result &gt; div:last-child {
+  text-align: center;
+  margin: 0;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  #quiz-container {
+    margin: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .quiz-section {
+    padding: 2rem 1.5rem;
+  }
+
+  #quiz-intro h2 {
+    font-size: 1.625rem;
+  }
+
+  #quiz-intro p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .result-percentage {
+    font-size: 2.75rem;
+  }
+
+  .answer-btn {
+    padding: 1.125rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #quiz-container {
+    margin: 1rem;
+  }
+
+  .quiz-section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  #quiz-intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .result-percentage {
+    font-size: 2.5rem;
+  }
+}
+&lt;/style&gt;
+
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  // 質問データ（簡単に追加・編集できます）
+  const questions = [
+    {
+      question: &#34;休日の過ごし方は?&#34;,
+      answers: [
+        { text: &#34;A. 友達とワイワイ遊ぶ&#34;, friend: 5, love: 10 },
+        { text: &#34;B. 一人で静かに過ごす&#34;, friend: -10, love: -10 }
+      ]
+    },
+    {
+      question: &#34;好きな食べ物は?&#34;,
+      answers: [
+        { text: &#34;A. ラーメン・辛い物&#34;, friend: 8, love: 5 },
+        { text: &#34;B. スイーツ・甘い物&#34;, friend: 3, love: 8 },
+        { text: &#34;C. 和食・あっさり系&#34;, friend: -5, love: 2 }
+      ]
+    },
+    {
+      question: &#34;連絡の頻度はどれくらいがいい?&#34;,
+      answers: [
+        { text: &#34;A. 毎日連絡したい&#34;, friend: 10, love: 10 },
+        { text: &#34;B. 週に数回くらい&#34;, friend: 5, love: 0 },
+        { text: &#34;C. 必要な時だけでOK&#34;, friend: -8, love: -10 }
+      ]
+    },
+    {
+      question: &#34;映画やドラマは何が好き?&#34;,
+      answers: [
+        { text: &#34;A. アクション・アドベンチャー&#34;, friend: 7, love: 3 },
+        { text: &#34;B. 恋愛・ロマンス&#34;, friend: 2, love: 10 },
+        { text: &#34;C. ホラー・サスペンス&#34;, friend: 5, love: -5 },
+        { text: &#34;D. コメディ・バラエティ&#34;, friend: 8, love: 5 }
+      ]
+    },
+    {
+      question: &#34;理想のデートは?&#34;,
+      answers: [
+        { text: &#34;A. テーマパークで一日遊ぶ&#34;, friend: 5, love: 10 },
+        { text: &#34;B. カフェでまったり話す&#34;, friend: 8, love: 8 },
+        { text: &#34;C. 映画を観に行く&#34;, friend: 3, love: 5 },
+        { text: &#34;D. アウトドアでアクティブに&#34;, friend: 10, love: 3 }
+      ]
+    }
+  ];
+
+  let currentQuestion = 0;
+  let friendScore = 50;
+  let loveScore = 50;
+
+  window.startQuiz = function() {
+    const intro = document.getElementById(&#39;quiz-intro&#39;);
+    const questionsSection = document.getElementById(&#39;quiz-questions&#39;);
+    
+    if (intro &amp;&amp; questionsSection) {
+      intro.classList.remove(&#39;active&#39;);
+      questionsSection.classList.add(&#39;active&#39;);
+      showQuestion();
+    }
+  };
+
+  function showQuestion() {
+    const q = questions[currentQuestion];
+    
+    const questionText = document.getElementById(&#39;question-text&#39;);
+    const answerOptions = document.getElementById(&#39;answer-options&#39;);
+    const currentQ = document.getElementById(&#39;current-q&#39;);
+    const totalQ = document.getElementById(&#39;total-q&#39;);
+    const progress = document.getElementById(&#39;progress&#39;);
+    
+    if (questionText) questionText.textContent = q.question;
+    if (currentQ) currentQ.textContent = currentQuestion + 1;
+    if (totalQ) totalQ.textContent = questions.length;
+    
+    const progressPercent = ((currentQuestion) / questions.length) * 100;
+    if (progress) {
+      progress.style.width = progressPercent + &#39;%&#39;;
+    }
+    
+    if (answerOptions) {
+      answerOptions.innerHTML = &#39;&#39;;
+      
+      q.answers.forEach((answer, index) =&gt; {
+        const btn = document.createElement(&#39;button&#39;);
+        btn.className = &#39;answer-btn&#39;;
+        btn.textContent = answer.text;
+        btn.onclick = () =&gt; selectAnswer(index);
+        answerOptions.appendChild(btn);
+      });
+    }
+  }
+
+  function selectAnswer(index) {
+    const answer = questions[currentQuestion].answers[index];
+    
+    friendScore = Math.max(0, Math.min(100, friendScore + answer.friend));
+    loveScore = Math.max(0, Math.min(100, loveScore + answer.love));
+    
+    setTimeout(() =&gt; {
+      currentQuestion++;
+      if (currentQuestion &lt; questions.length) {
+        showQuestion();
+      } else {
+        showResult();
+      }
+    }, 300);
+  }
+
+  function showResult() {
+    document.getElementById(&#39;quiz-questions&#39;).classList.remove(&#39;active&#39;);
+    document.getElementById(&#39;quiz-result&#39;).classList.add(&#39;active&#39;);
+    
+    document.getElementById(&#39;final-friend&#39;).textContent = Math.round(friendScore) + &#39;%&#39;;
+    document.getElementById(&#39;final-love&#39;).textContent = Math.round(loveScore) + &#39;%&#39;;
+    
+    document.getElementById(&#39;progress&#39;).style.width = &#39;100%&#39;;
+    
+    // メッセージを生成
+    let friendMsg = &#39;&#39;;
+    if (friendScore &gt;= 80) friendMsg = &#39;最高の友達になれそうです。価値観がとても合っています。&#39;;
+    else if (friendScore &gt;= 60) friendMsg = &#39;良い友達関係が築けるでしょう。一緒にいて楽しい時間を過ごせるはずです。&#39;;
+    else if (friendScore &gt;= 40) friendMsg = &#39;普通の友達関係です。お互いを理解し合えば仲良くなれるでしょう。&#39;;
+    else friendMsg = &#39;少し価値観が違うかもしれません。でも違いを楽しめる関係になれる可能性があります。&#39;;
+    
+    let loveMsg = &#39;&#39;;
+    if (loveScore &gt;= 80) loveMsg = &#39;運命の相手かもしれません。恋愛相性は抜群です。&#39;;
+    else if (loveScore &gt;= 60) loveMsg = &#39;素敵な恋愛関係が築けそうです。お互いを尊重できる関係になれるでしょう。&#39;;
+    else if (loveScore &gt;= 40) loveMsg = &#39;恋愛相性は普通です。努力次第で良い関係になれるかもしれません。&#39;;
+    else loveMsg = &#39;恋愛は難しいかもしれません。しかし友達としては良い関係が築けるはずです。&#39;;
+    
+    document.getElementById(&#39;friend-message&#39;).textContent = friendMsg;
+    document.getElementById(&#39;love-message&#39;).textContent = loveMsg;
+  }
+
+  window.resetQuiz = function() {
+    currentQuestion = 0;
+    friendScore = 50;
+    loveScore = 50;
+    
+    document.getElementById(&#39;quiz-result&#39;).classList.remove(&#39;active&#39;);
+    document.getElementById(&#39;quiz-intro&#39;).classList.add(&#39;active&#39;);
+    
+    document.getElementById(&#39;progress&#39;).style.width = &#39;0%&#39;;
+  };
+});
+&lt;/script&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>

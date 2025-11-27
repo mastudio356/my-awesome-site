@@ -12,6 +12,11 @@
   weight = 20
 
 [[menu.main]]
+  name = "診断"
+  url = "/shindan/"
+  weight = 30
+
+[[menu.main]]
   name = "プロフィール"
   url = "/about/"
   weight = 30

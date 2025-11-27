@@ -3,13 +3,17 @@ module:
         extended: true
         min: "0.87.0"
 
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
 params:
     mainSections:
         - post
     featuredImageField: image
     rssFullContent: true
     favicon:  /images/favicon.ico
-
 
     footer:
         since:

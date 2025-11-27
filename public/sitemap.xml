@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/steamframe-or-other/</loc>
-    <lastmod>2025-11-26T19:34:45+09:00</lastmod>
+    <loc>http://localhost:1313/shindan/nyaoh_aisyou/</loc>
+    <lastmod>2025-11-26T23:39:54+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-26T23:39:54+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/shindan/</loc>
+    <lastmod>2025-11-26T23:39:54+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/steamframe-or-other/</loc>
     <lastmod>2025-11-26T19:34:45+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>

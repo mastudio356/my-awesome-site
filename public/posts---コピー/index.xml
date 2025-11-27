@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>ホームページ on にゃおぽぽ</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/</link>
         <description>Recent content in ホームページ on にゃおぽぽ</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-JP</language>
         <copyright>Nyaoh popo All Rights Reserved.</copyright>
-        <lastBuildDate>Wed, 26 Nov 2025 19:34:45 +0900</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 26 Nov 2025 19:34:45 +0900</lastBuildDate><atom:link href="http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>SteamframeをFocusVisionユーザーが考察してみた。</title>
-        <link>http://localhost:1313/posts/steamframe-or-other/</link>
+        <link>http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/steamframe-or-other/</link>
         <pubDate>Wed, 26 Nov 2025 19:34:45 +0900</pubDate>
         
-        <guid>http://localhost:1313/posts/steamframe-or-other/</guid>
+        <guid>http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/steamframe-or-other/</guid>
         <description>&lt;h1 id=&#34;次世代xrヘッドセット-steamframe&#34;&gt;&lt;a href=&#34;#%e6%ac%a1%e4%b8%96%e4%bb%a3xr%e3%83%98%e3%83%83%e3%83%89%e3%82%bb%e3%83%83%e3%83%88-steamframe&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;&lt;strong&gt;次世代XRヘッドセット SteamFrame!&lt;/strong&gt;
 &lt;/h1&gt;&lt;p&gt;最近Steamが様々なゲーミングデバイスを発表したことが有名だ。その中でも、VRChatterを含めたVRユーザーを驚愕させたのがそう、SteamFrameなのだ。
 アイトラッキングにハンドトラッキング、ついにベースステーション無しでのインサイドトラッキングにも対応。とんでもない機器が出てきてしまった。&lt;/p&gt;
@@ -268,20 +268,20 @@
 &lt;p&gt;一番気になってるのは、アイトラッキングデータがどんな感じなのかわからないことなんですよね。瞬きは対応してるのかとか、将来口元もトラッキングできるのかとか。さらに言えばどれくらいの制度でトラッキングできるのか。トラッキングのFPSはどれくらいなのかとか&amp;hellip;&lt;/p&gt;
 &lt;p&gt;SteamFrameが「純粋な高性能PCVRの王者」を目指すのはすごく理解できるけど、この思い切った「切り捨て」が、吉と出るか凶と出るかは、発売されてみないとわからないですね。&lt;/p&gt;
 &lt;h3 id=&#34;63-最終的な戦略的提言&#34;&gt;&lt;a href=&#34;#63-%e6%9c%80%e7%b5%82%e7%9a%84%e3%81%aa%e6%88%a6%e7%95%a5%e7%9a%84%e6%8f%90%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;&lt;strong&gt;6.3. 最終的な戦略的提言&lt;/strong&gt;
-&lt;/h3&gt;&lt;p&gt;VRを使う身として、新しいSteamFrameの登場は、正直、かなりワクワクする出来事です。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;VR開発に携わる身として、新しいSteamFrameの登場は、正直、かなりワクワクする出来事です。&lt;/p&gt;
 &lt;p&gt;特に、PCVRコンテンツを作る上での「レンダリングのやり方」が大きく変わるんだろうな、と個人的には感じています。一番大事になってくるのは、やっぱり&lt;strong&gt;アイトラッキングとFoveated Rendering/Streamingの技術&lt;/strong&gt;をどれだけうまく使えるか、なんだと思うんです。&lt;/p&gt;
-&lt;p&gt;だって、SteamFrameってすごく性能が良いみたいだから、その力を最大限に引き出すには、コンテンツ側がちゃんと最適化されていないと、もったいないじゃないですか。これからのハイエンドなPCVRゲームが成功するかどうかは、この最適化にかかっている、と言っても過言ではない気がします。&lt;/p&gt;
-&lt;p&gt;個人的に一番熱い視線を送ってしまうのは、やっぱり&lt;strong&gt;SteamFrame&lt;/strong&gt;の動向なんですよね。何と言っても、あの世界最大のPCゲームプラットフォームであるSteamで、新しいデバイスが出るんですから。ハイエンドなVRゲーム体験を求める人たちにとっては、これが「決定版」になる可能性を秘めている、と私は考えています。&lt;/p&gt;
-&lt;p&gt;それから、&lt;strong&gt;Pico 4 Ultra&lt;/strong&gt;も地味にすごい存在感があるんですよ。Quest 3と比べても高解像度だし、価格的にも魅力的なVRの選択肢として、特にアジア圏ではかなり強いんじゃないかな。私も以前、Pico 4を触ったことがあるんですが、あの軽量さと画質はやっぱり魅力的でした。&lt;/p&gt;
+&lt;p&gt;だって、SteamFrameってすごく性能が良いみたいだから、その力を最大限に引き出すには、コンテンツ側がちゃんと最適化されていないと、もったいないじゃないですか。これからのハイエンドなPCVRゲームが成功するかどうかは、この最適化にかかっている、と言っても過言ではない気がします。私も、自分のプロジェクトでどう取り入れるか、今から色々試してみようと考えているところです。&amp;mdash;&amp;ndash;あと、市場全体の話でいうと、どっちに注目して投資するか、っていうのは結構好みが分かれるポイントですよね。&lt;/p&gt;
+&lt;p&gt;個人的に一番熱い視線を送ってしまうのは、やっぱり&lt;strong&gt;SteamFrame&lt;/strong&gt;の動向なんですよね。何と言っても、あの世界最大のPCゲームプラットフォームであるSteamのエコシステムで、新しいイノベーションが起こるわけですから。ハイエンドなゲーム体験を求める人たちにとっては、これが「決定版」になる可能性を秘めている、と私は考えています。&lt;/p&gt;
+&lt;p&gt;それから、&lt;strong&gt;Pico 4 Ultra&lt;/strong&gt;も地味にすごい存在感があるんですよ。Quest 3と比べても高解像度だし、価格的にも魅力的なMRの選択肢として、特にアジア圏ではかなり強いんじゃないかな。私も以前、Pico 4を触ったことがあるんですが、あの軽量さと画質はやっぱり魅力的でした。&lt;/p&gt;
 &lt;p&gt;どのヘッドセットもそれぞれに魅力があって、VR業界全体が面白くなってきたな、というのが今の率直な感想です。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title> [個人見解] RTX 5050は現代ゲームで通用するのか？</title>
-        <link>http://localhost:1313/posts/first-post/</link>
+        <link>http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/first-post/</link>
         <pubDate>Tue, 25 Nov 2025 14:36:45 +0900</pubDate>
         
-        <guid>http://localhost:1313/posts/first-post/</guid>
+        <guid>http://localhost:1313/posts---%E3%82%B3%E3%83%94%E3%83%BC/first-post/</guid>
         <description>&lt;h2 id=&#34;個人見解-rtx-5050は現代ゲームで通用するのか&#34;&gt;&lt;a href=&#34;#%e5%80%8b%e4%ba%ba%e8%a6%8b%e8%a7%a3-rtx-5050%e3%81%af%e7%8f%be%e4%bb%a3%e3%82%b2%e3%83%bc%e3%83%a0%e3%81%a7%e9%80%9a%e7%94%a8%e3%81%99%e3%82%8b%e3%81%ae%e3%81%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;[個人見解] RTX 5050は現代ゲームで通用するのか？
 &lt;/h2&gt;&lt;p&gt;RTX 5050。5000シリーズの最下位に位置するGPU。VRAMが8GBしかなかったり、性能が今のAAAゲームに合っていないなどと様々言われているが、実際に実用するうえでどの程度その性能を体感できるのか気になったため実用してみることにした。&lt;/p&gt;
 &lt;h2 id=&#34;検証環境&#34;&gt;&lt;a href=&#34;#%e6%a4%9c%e8%a8%bc%e7%92%b0%e5%a2%83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;検証環境

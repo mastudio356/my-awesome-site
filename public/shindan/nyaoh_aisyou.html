@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nyaohとの相性診断</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+      color: #333;
+    }
+
+    #quiz-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2.5rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    .quiz-section {
+      display: none;
+    }
+
+    .quiz-section.active {
+      display: block;
+      animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+
+    #quiz-intro {
+      text-align: center;
+    }
+
+    #quiz-intro h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #667eea;
+      font-weight: 700;
+    }
+
+    #quiz-intro p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .compatibility-display {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin: 2.5rem 0;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 12px;
+    }
+
+    .compat-item {
+      text-align: center;
+      flex: 1;
+    }
+
+    .compat-label {
+      display: block;
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+    }
+
+    .compat-value {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 1.2rem 3rem;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .btn-primary:active {
+      transform: translateY(-1px);
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
+    .question-counter {
+      text-align: center;
+      color: #999;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+
+    #question-text {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      color: #333;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .answer-grid {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .answer-btn {
+      padding: 1.5rem 2rem;
+      background: #f8f9fa;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: left;
+      font-size: 1.05rem;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .answer-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .answer-btn:hover {
+      border-color: #667eea;
+      transform: translateX(8px);
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .answer-btn:hover::before {
+      left: 100%;
+    }
+
+    .result-display {
+      display: grid;
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    .result-item {
+      padding: 2.5rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .result-item h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    .result-percentage {
+      font-size: 3.5rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+    }
+
+    .result-item p {
+      color: #666;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 600px) {
+      #quiz-container {
+        padding: 1.5rem;
+      }
+      
+      .compatibility-display {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      
+      .compat-value {
+        font-size: 2rem;
+      }
+
+      #quiz-intro h2 {
+        font-size: 1.8rem;
+      }
+
+      #question-text {
+        font-size: 1.2rem;
+      }
+
+      .result-percentage {
+        font-size: 2.5rem;
+      }
+
+      .btn-primary {
+        padding: 1rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <div id="quiz-intro" class="quiz-section active">
+      <h2>🎯 nyaohとの相性診断</h2>
+      <p>いくつかの質問に答えて、nyaohとの相性をチェックしましょう！</p>
+      <div class="compatibility-display">
+        <div class="compat-item">
+          <span class="compat-label">👥 友達相性</span>
+          <span class="compat-value" id="intro-friend">50%</span>
+        </div>
+        <div class="compat-item">
+          <span class="compat-label">💕 恋愛相性</span>
+          <span class="compat-value" id="intro-love">50%</span>
+        </div>
+      </div>
+      <button onclick="startQuiz()" class="btn-primary">診断を始める</button>
+    </div>
+
+    <div id="quiz-questions" class="quiz-section">
+      <div class="progress-bar">
+        <div id="progress" class="progress-fill"></div>
+      </div>
+      <p class="question-counter">質問 <span id="current-q">1</span> / <span id="total-q">5</span></p>
+      
+      <div id="question-content">
+        <h3 id="question-text"></h3>
+        <div id="answer-options" class="answer-grid"></div>
+      </div>
+      
+      <div class="compatibility-display">
+        <div class="compat-item">
+          <span class="compat-label">👥 友達相性</span>
+          <span class="compat-value" id="current-friend">50%</span>
+        </div>
+        <div class="compat-item">
+          <span class="compat-label">💕 恋愛相性</span>
+          <span class="compat-value" id="current-love">50%</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="quiz-result" class="quiz-section">
+      <h2 style="text-align: center; color: #667eea; margin-bottom: 1rem;">✨ 診断結果 ✨</h2>
+      <div class="result-display">
+        <div class="result-item">
+          <h3>👥 友達相性</h3>
+          <div class="result-percentage" id="final-friend">50%</div>
+          <p id="friend-message"></p>
+        </div>
+        <div class="result-item">
+          <h3>💕 恋愛相性</h3>
+          <div class="result-percentage" id="final-love">50%</div>
+          <p id="love-message"></p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <button onclick="resetQuiz()" class="btn-primary">もう一度診断する</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 質問データ（簡単に追加・編集できます）
+    const questions = [
+      {
+        question: "休日の過ごし方は?",
+        answers: [
+          { text: "A. 友達とワイワイ遊ぶ", friend: 5, love: 10 },
+          { text: "B. 一人で静かに過ごす", friend: -10, love: -10 }
+        ]
+      },
+      {
+        question: "好きな食べ物は?",
+        answers: [
+          { text: "A. ラーメン・辛い物", friend: 8, love: 5 },
+          { text: "B. スイーツ・甘い物", friend: 3, love: 8 },
+          { text: "C. 和食・あっさり系", friend: -5, love: 2 }
+        ]
+      },
+      {
+        question: "連絡の頻度はどれくらいがいい?",
+        answers: [
+          { text: "A. 毎日連絡したい", friend: 10, love: 10 },
+          { text: "B. 週に数回くらい", friend: 5, love: 0 },
+          { text: "C. 必要な時だけでOK", friend: -8, love: -10 }
+        ]
+      },
+      {
+        question: "映画やドラマは何が好き?",
+        answers: [
+          { text: "A. アクション・アドベンチャー", friend: 7, love: 3 },
+          { text: "B. 恋愛・ロマンス", friend: 2, love: 10 },
+          { text: "C. ホラー・サスペンス", friend: 5, love: -5 },
+          { text: "D. コメディ・バラエティ", friend: 8, love: 5 }
+        ]
+      },
+      {
+        question: "理想のデートは?",
+        answers: [
+          { text: "A. テーマパークで一日遊ぶ", friend: 5, love: 10 },
+          { text: "B. カフェでまったり話す", friend: 8, love: 8 },
+          { text: "C. 映画を観に行く", friend: 3, love: 5 },
+          { text: "D. アウトドアでアクティブに", friend: 10, love: 3 }
+        ]
+      }
+    ];
+
+    let currentQuestion = 0;
+    let friendScore = 50;
+    let loveScore = 50;
+
+    function startQuiz() {
+      document.getElementById('quiz-intro').classList.remove('active');
+      document.getElementById('quiz-questions').classList.add('active');
+      showQuestion();
+    }
+
+    function showQuestion() {
+      const q = questions[currentQuestion];
+      document.getElementById('question-text').textContent = q.question;
+      document.getElementById('current-q').textContent = currentQuestion + 1;
+      document.getElementById('total-q').textContent = questions.length;
+      
+      const progress = ((currentQuestion) / questions.length) * 100;
+      document.getElementById('progress').style.width = progress + '%';
+      
+      const optionsDiv = document.getElementById('answer-options');
+      optionsDiv.innerHTML = '';
+      
+      q.answers.forEach((answer, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'answer-btn';
+        btn.textContent = answer.text;
+        btn.onclick = () => selectAnswer(index);
+        optionsDiv.appendChild(btn);
+      });
+      
+      updateScoreDisplay();
+    }
+
+    function selectAnswer(index) {
+      const answer = questions[currentQuestion].answers[index];
+      
+      friendScore = Math.max(0, Math.min(100, friendScore + answer.friend));
+      loveScore = Math.max(0, Math.min(100, loveScore + answer.love));
+      
+      updateScoreDisplay();
+      
+      setTimeout(() => {
+        currentQuestion++;
+        if (currentQuestion < questions.length) {
+          showQuestion();
+        } else {
+          showResult();
+        }
+      }, 300);
+    }
+
+    function updateScoreDisplay() {
+      document.getElementById('current-friend').textContent = Math.round(friendScore) + '%';
+      document.getElementById('current-love').textContent = Math.round(loveScore) + '%';
+    }
+
+    function showResult() {
+      document.getElementById('quiz-questions').classList.remove('active');
+      document.getElementById('quiz-result').classList.add('active');
+      
+      document.getElementById('final-friend').textContent = Math.round(friendScore) + '%';
+      document.getElementById('final-love').textContent = Math.round(loveScore) + '%';
+      
+      document.getElementById('progress').style.width = '100%';
+      
+      // メッセージを生成
+      let friendMsg = '';
+      if (friendScore >= 80) friendMsg = '最高の友達になれそう！価値観がとても合っています✨';
+      else if (friendScore >= 60) friendMsg = '良い友達関係が築けそう！一緒にいて楽しい時間を過ごせるはず😊';
+      else if (friendScore >= 40) friendMsg = '普通の友達関係。お互いを理解し合えば仲良くなれそう！';
+      else friendMsg = '少し価値観が違うかも。でも違いを楽しめる関係になれるかも！';
+      
+      let loveMsg = '';
+      if (loveScore >= 80) loveMsg = '運命の相手かも！？恋愛相性バッチリです💕';
+      else if (loveScore >= 60) loveMsg = '素敵な恋愛関係が築けそう！お互いを尊重できる関係に❤️';
+      else if (loveScore >= 40) loveMsg = '恋愛相性は普通。努力次第で良い関係になれるかも！';
+      else loveMsg = '恋愛は難しいかも。でも友達としては良い関係が築けるはず！';
+      
+      document.getElementById('friend-message').textContent = friendMsg;
+      document.getElementById('love-message').textContent = loveMsg;
+    }
+
+    function resetQuiz() {
+      currentQuestion = 0;
+      friendScore = 50;
+      loveScore = 50;
+      
+      document.getElementById('quiz-result').classList.remove('active');
+      document.getElementById('quiz-intro').classList.add('active');
+      
+      document.getElementById('intro-friend').textContent = '50%';
+      document.getElementById('intro-love').textContent = '50%';
+      document.getElementById('progress').style.width = '0%';
+    }
+  </script>
+</body>
+</html>
